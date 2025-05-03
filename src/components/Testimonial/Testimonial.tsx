@@ -5,14 +5,17 @@ import { realTestimonials as reviews } from "./testimonialData.js";
 
 export default function TestimonialSection() {
   return (
-    <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 max-w-7xl">
-      {/* Header */}
-      <div className="mb-8 sm:mb-12">
-        <div className="flex items-center mb-3 sm:mb-4">
-          <div className="w-8 h-px bg-gray-400 mr-3"></div>
-          <span className="text-base sm:text-lg font-medium font-poppins">
-            Testimonial
-          </span>
+   <div className="">
+     <section className="w-full  bg-[#E6F4EC4D] bg-opacity-30] pb-24">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 max-w-7xl">
+        {/* Header */}
+        <div className="mb-8 sm:mb-12">
+          <div className="flex items-center mb-3 sm:mb-4">
+            <div className="w-8 h-px bg-gray-400 mr-3"></div>
+            <span className="text-base sm:text-lg font-medium font-poppins">
+              Testimonial
+            </span>
+          </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-start gap-4 sm:gap-6">
@@ -36,7 +39,7 @@ export default function TestimonialSection() {
       </div>
 
       {/* Testimonial Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-8 sm:mt-12">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-8 sm:mt-12 mx-10">
         {reviews.map((testimonial, index) => (
           <div
             key={index}
@@ -84,5 +87,6 @@ export default function TestimonialSection() {
         ))}
       </div>
     </section>
+   </div>
   );
 }
