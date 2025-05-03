@@ -8,6 +8,7 @@ import YourTrustedPartner from "@/components/pages/home/YourTrustedPartner/YourT
 import BlogComponent from "@/components/shared/blog/BlogComponent";
 import ImproveProperty from "@/components/shared/ImproveProperty/ImproveProperty";
 import TestimonialSection from "@/components/Testimonial/Testimonial";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
