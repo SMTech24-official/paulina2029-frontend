@@ -9,10 +9,11 @@ export default function TestimonialSection() {
       {/* Header */}
       <div className="mb-8 sm:mb-12">
         <div className="flex items-center mb-3 sm:mb-4">
-          <div className="w-8 h-px bg-gray-400 mr-3"></div>
-          <span className="text-base sm:text-lg font-medium font-poppins">
-            Testimonial
-          </span>
+        <div className="flex items-center gap-2 mb-2">
+            <div className="w-6 h-[1px] bg-emerald-600"></div>
+            <p className="text-[#231F20] md:text-xl text-base font-semibold">Testimonials</p>
+          </div>
+          
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-start gap-4 sm:gap-6">

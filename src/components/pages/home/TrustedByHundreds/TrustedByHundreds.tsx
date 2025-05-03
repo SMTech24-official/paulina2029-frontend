@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle } from "lucide-react";
 import building from "@/assets/building.png";
+import { Button } from "@/components/ui/button";
 
 export default function AboutUsSection() {
   return (
@@ -35,9 +36,10 @@ export default function AboutUsSection() {
           </div>
           <div className="flex flex-col justify-center space-y-6">
             <div>
-              <h2 className="text-sm font-medium uppercase tracking-wider text-gray-500">
-                About Us
-              </h2>
+            <div className="flex items-center gap-2 mb-2">
+            <div className="w-6 h-[1px] bg-emerald-600"></div>
+            <p className="text-[#231F20] md:text-xl text-base font-semibold">About Us</p>
+          </div>
               <h3 className="mt-1 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
                 The Jimenez Plastering Difference
               </h3>
@@ -53,54 +55,58 @@ export default function AboutUsSection() {
             </p>
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
-                <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-green-600" />
+                <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#16A34A]" />
                 <span className="text-gray-700">
                   Serving Northern Arizona for over 25 years.
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-green-600" />
+                <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#16A34A]" />
                 <span className="text-gray-700">
                   Generations of plasterers with over 40 years of combined
                   experience.
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-green-600" />
+                <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#16A34A]" />
                 <span className="text-gray-700">
                   Systems designed for durability, functionality, and longevity,
                   adapted to our local environment.
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-green-600" />
+                <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#16A34A]" />
                 <span className="text-gray-700">
                   The go-to stucco contractor for custom homes and large-scale
                   commercial projects.
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-green-600" />
+                <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#16A34A]" />
                 <span className="text-gray-700">Certified and Trusted</span>
               </li>
             </ul>
             <div className="flex flex-col gap-3 sm:flex-row">
-              <Link
+  <Button>
+  <Link
                 href="#contact"
-                className="inline-flex h-10 items-center justify-center rounded-md bg-green-600 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-green-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-green-700"
+             
               >
                 Contact Us
               </Link>
+  </Button>
+              <Button variant="outline">
               <Link
-                href="#learn-more"
-                className="inline-flex h-10 items-center justify-center rounded-md border border-green-600 px-8 text-sm font-medium text-green-600 shadow-sm transition-colors hover:bg-green-50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-green-700"
+                href="#contact"
+             
               >
-                Learn More
+                Contact Us
               </Link>
+              </Button>
             </div>
           </div>
         </div>
-      </div>
+      </div>  
     </section>
   );
 }

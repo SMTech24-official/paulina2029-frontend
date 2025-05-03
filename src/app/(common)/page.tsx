@@ -5,9 +5,9 @@ import PortfolioSwiper from "@/components/pages/home/Our-Portfolio/Portfolio";
 import OurService from "@/components/pages/home/OurService/OurService";
 import TrustedByHundreds from "@/components/pages/home/TrustedByHundreds/TrustedByHundreds";
 import YourTrustedPartner from "@/components/pages/home/YourTrustedPartner/YourTrustedPartner";
-import BlogComponent from "@/components/shared/blog/BlogComponent";
-import ImproveProperty from "@/components/shared/ImproveProperty/ImproveProperty";
-// import TrustedTrader from "@/components/shared/TrustedTrader/TrustedTrader";
+// import BlogComponent from "@/components/shared/blog/BlogComponent";
+// import ImproveProperty from "@/components/shared/ImproveProperty/ImproveProperty";
+// // import TrustedTrader from "@/components/shared/TrustedTrader/TrustedTrader";
 import TestimonialSection from "@/components/Testimonial/Testimonial";
 import { Metadata } from "next";
 
@@ -29,8 +29,8 @@ const Home = () => {
       <OurService />
       <HappenBanner/>
       <TestimonialSection/>
-      <BlogComponent  smallTitle="Blog" mainTitle="Insights & Inspiration: The LondonGutterClean Blog" />
-      <ImproveProperty/>
+      {/* <BlogComponent  smallTitle="Blog" mainTitle="Insights & Inspiration: The LondonGutterClean Blog" /> */}
+      {/* <ImproveProperty/> */}
       <PortfolioSwiper />
 <ContactPage/>
  
