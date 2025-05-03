@@ -3,7 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
-import Logo from "@/assets/logo/logo.png"
+import Logo from "@/assets/logo/logo.png";
+import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
   return (
@@ -15,8 +16,7 @@ export default function Navbar() {
             <Image
               src={Logo}
               alt="Jimenez Plastering Logo"
-              width={40}
-              height={40}
+              fill
               className="object-contain"
             />
           </div>
@@ -49,40 +49,41 @@ export default function Navbar() {
           </Link>
           <span className="text-[#CBCBCB]">|</span>
 
-          {/* Custom Dropdown */}
+          {/* Dropdown */}
           <div className="relative group">
             <button className="flex items-center gap-1 text-gray-700 hover:text-green-600 transition-colors">
-              Services{" "}
+              Services
               <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
             </button>
-            <div className="absolute p-4">
-              <div className="absolute top-0 hidden group-hover:block  bg-white shadow-lg rounded-md mt-2 min-w-[200px] border border-gray-100 z-10">
-                <div className="py-1">
-                  <Link
-                    href="/services/residential"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600"
-                  >
-                    Residential
-                  </Link>
-                  <Link
-                    href="/services/commercial"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600"
-                  >
-                    Commercial
-                  </Link>
-                  <Link
-                    href="/services/repairs"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600"
-                  >
-                    Repairs
-                  </Link>
-                </div>
+            <div className="absolute top-full left-0 hidden group-hover:block bg-white shadow-lg rounded-md mt-2 min-w-[200px] border border-gray-100 z-10">
+              <div className="py-1">
+                <Link
+                  href="/services/residential"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600"
+                >
+                  Residential
+                </Link>
+                <Link
+                  href="/services/commercial"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600"
+                >
+                  Commercial
+                </Link>
+              
+                <Button>
+                <Link
+                  href="/services/repairs"
+                  className=""
+                >
+                  Repairs
+                </Link>
+                </Button>
               </div>
             </div>
           </div>
         </nav>
 
-        {/* Contact Information */}
+        {/* Contact Info */}
         <div className="flex items-center gap-4">
           <div className="hidden md:block">
             <span className="text-gray-700">Call Us: </span>
@@ -93,13 +94,12 @@ export default function Navbar() {
               928-634-9065
             </a>
           </div>
-          <Link 
-            href="/contact" 
+          <Link
+            href="/contact"
             className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors font-medium"
           >
             Contact Us
           </Link>
-         </Button>
         </div>
       </div>
     </header>

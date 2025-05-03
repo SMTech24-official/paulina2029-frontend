@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { NextUiProvider } from "@/lib/providers/NextUIProvider";
-import Navbar from "@/components/shared/Navbar/Navbar";
+
 import ScrollToTopButton from "@/components/ui/ScrollToTopButton/ScrollToTopButton";
 import Footer from "@/components/shared/Footer/Footer";
 import ReduxStoreProvider from "@/redux/ReduxStoreProvider";
 import { Toaster } from "sonner";
+import Navbar from "@/components/shared/Navbar/Navbar";
 
 const inter = Inter({
   weight: ["300", "400", "500", "600", "700"],

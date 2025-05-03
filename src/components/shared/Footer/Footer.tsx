@@ -48,7 +48,7 @@ const Footer: FC = () => {
       </div>
       <div className="container mx-auto px-4 sm:px-6">
         <div>
-          <img src="" alt="" />
+          <Image src="" alt="" width={100} height={100}/>
         </div>
         <div className="flex flex-col md:flex-row gap-8 lg:gap-12 xl:gap-16 text-sm text-gray-200">
           {/* Column 1: Logo & Description */}
@@ -66,7 +66,7 @@ const Footer: FC = () => {
               </h2>
             </div>
             <p className="text-[#97A4BA] font-poppins text-sm sm:text-base font-normal">
-              We'll ensure your gutters function flawlessly and enhance the
+              We&lsquo;ll ensure your gutters function flawlessly and enhance the
               overall look of your London home or business.
             </p>
           </div>

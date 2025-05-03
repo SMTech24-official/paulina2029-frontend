@@ -1,64 +1,56 @@
-
-
-.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
-    position: absolute ;
+/* Scoped pagination styles */
+.banner-swiper .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    position: absolute;
     left: -27% !important;
     top: 67% !important;
   }
   
-  .swiper-pagination-bullet {
-    height: 18px !important; 
+  .banner-swiper .swiper-pagination-bullet {
+    height: 18px !important;
     width: 18px !important;
     border-radius: 50%;
-    background-color: white !important; 
-    display: inline-block; 
-    margin: 0 5px !important; 
-    opacity: 0.5; 
+    background-color: white !important;
+    display: inline-block;
+    margin: 0 5px !important;
+    opacity: 0.5;
     position: relative;
   }
   
-  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: transparent !important; 
+  .banner-swiper span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: transparent !important;
     height: 15px !important;
-    width: 15px !important; 
+    width: 15px !important;
   }
   
-  span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  .banner-swiper span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
     content: '';
     display: block;
-    width: calc(100% + 6px); 
+    width: calc(100% + 6px);
     height: calc(100% + 6px);
     border-radius: 50%;
-    border: 6px solid #009245 !important; 
+    border: 6px solid #009245 !important;
     position: absolute;
     top: -3px !important;
-    left: -3px !important; 
+    left: -3px !important;
     box-sizing: border-box;
   }
   
-  
-  
-  
-  
+  /* Media queries scoped too */
   @media screen and (max-width: 768px) {
-
-
-
-    .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
-   
-        left: 0% !important;
-        bottom: 1% !important;
-  margin-top:10%
+    .banner-swiper .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+      left: 0% !important;
+      bottom: 1% !important;
+      margin-top: 10%;
+    }
   
-      } 
-    .swiper-pagination-bullet {
+    .banner-swiper .swiper-pagination-bullet {
       height: 12px !important;
       width: 12px !important;
       margin: 0 5px !important;
     }
   
-    span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
-      border: 6px solid #009245  !important;
+    .banner-swiper span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+      border: 6px solid #009245 !important;
       top: -2px !important;
       left: 2px !important;
       width: calc(100% + 4px);
@@ -66,45 +58,42 @@
     }
   }
   
-  
   @media screen and (max-width: 480px) {
-     .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    .banner-swiper .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
       position: absolute !important;
       left: 0% !important;
       bottom: -20% !important;
-margin-top:20%
-
-    } 
-     
-    .swiper-pagination-bullet {
-      height: 12px !important; 
-      width: 12px !important; 
-      border-radius: 50%;
-      background-color: white !important; 
-      display: inline-block; 
-      margin: 0 5px !important; 
-      opacity: 1; 
-      position: relative; 
+      margin-top: 20%;
     }
-    
-    span.swiper-pagination-bullet.swiper-pagination-bullet-active {
-      background-color: transparent !important; 
-      height: 14px !important; 
+  
+    .banner-swiper .swiper-pagination-bullet {
+      height: 12px !important;
+      width: 12px !important;
+      border-radius: 50%;
+      background-color: white !important;
+      display: inline-block;
+      margin: 0 5px !important;
+      opacity: 1;
+      position: relative;
+    }
+  
+    .banner-swiper span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: transparent !important;
+      height: 14px !important;
       width: 14px !important;
     }
-    
-    span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  
+    .banner-swiper span.swiper-pagination-bullet.swiper-pagination-bullet-active::before {
       content: '';
       display: block;
-      width: calc(100% + 6px); 
-      height: calc(100% + 6px); 
+      width: calc(100% + 6px);
+      height: calc(100% + 6px);
       border-radius: 50%;
       border: 6px solid #009245 !important;
       position: absolute;
-      top: -3px !important; 
-      left: -3px !important; 
+      top: -3px !important;
+      left: -3px !important;
       box-sizing: border-box;
     }
-    
-    
   }
+  
