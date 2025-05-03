@@ -65,7 +65,7 @@ export default function CustomPortfolioSlider() {
             style={{
                 // Adjust width to account for padding/gap if necessary, or simplify
                 // Width should be enough to contain all items side-by-side
-                width: `${portfolioItems.length * (50 / visibleSlides)}%`,
+                width: `${portfolioItems.length * (20 / visibleSlides)}%`,
                 transform: `translateX(-${activeIndex * slideTransformPercentage}%)`,
             }}
           >
@@ -82,9 +82,9 @@ export default function CustomPortfolioSlider() {
                     src={item.image}
                     alt={item.title}
                     // You might adjust width/height based on desired aspect ratio
-                    width={300} // Example width, adjust as needed
-                    height={400} // Example height, adjust as needed
-                    className="w-full h-[400px] object-cover" // Ensure image covers the area
+                    width={250} // Example width, adjust as needed
+                    height={500} // Example height, adjust as needed
+                    className="w-full h-[500px] object-cover" // Ensure image covers the area
                   />
                   {/* Text Overlay - Positioned absolutely at the bottom */}
                   <div className="absolute bottom-3 left-0 right-0 p-4 m-2 text-white text-center backdrop-blur-sm bg-black/30 rounded-lg"> {/* Added backdrop-blur and adjusted background color/opacity */}

@@ -1,3 +1,4 @@
+import ContactPage from "@/components/ContactUs/ContactUs";
 import Banner from "@/components/pages/home/banner/Banner";
 import PortfolioSwiper from "@/components/pages/home/Our-Portfolio/Portfolio";
 import OurService from "@/components/pages/home/OurService/OurService";
@@ -29,8 +30,9 @@ const Home = () => {
       <TrustedTrader/>
       <BlogComponent  smallTitle="Blog" mainTitle="Insights & Inspiration: The LondonGutterClean Blog" />
       <ImproveProperty/>
-
       <PortfolioSwiper />
+<ContactPage/>
+ 
     </>
   );
 };
