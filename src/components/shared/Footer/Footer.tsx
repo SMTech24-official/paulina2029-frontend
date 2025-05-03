@@ -1,145 +1,146 @@
 "use client";
-import React from "react";
-import logo from "@/assets/logo/footerLogo.png";
+
 import Image from "next/image";
-import { FaFacebookF } from "react-icons/fa6";
-import { RiHomeOfficeLine, RiLinkedinFill } from "react-icons/ri";
-import { IoLocationOutline, IoLogoWhatsapp } from "react-icons/io5";
-import NavMenu from "../Navbar/NavMenu";
-import { Accordion, AccordionItem } from "@nextui-org/react";
+import { FC } from "react";
+import { Mail, Phone } from "lucide-react";
+import Logo from "@/assets/logo/logo.png";
 import Link from "next/link";
-import { PiBuildingOffice } from "react-icons/pi";
-import { MdMailOutline, MdOutlineCall } from "react-icons/md";
-import AreasWeServe from "./AreasWeServe";
+import { PiBuildingApartmentLight } from "react-icons/pi";
+import WaveRight from "@/assets/overlay-images/wave-right.png";
+import WaveLeft from "@/assets/overlay-images/wave-left.png";
 
-const thirdRow = [
-  {
-    title: "Blog",
-    link: "/blog",
-  },
-  {
-    title: "Reviews",
-    link: "/#review-section",
-  },
-  {
-    title: "Terms and Conditions",
-    link: "/",
-  },
-  {
-    title: "Important information",
-    link: "/",
-  },
-];
-const forthRow = [
-  {
-    title: "Lee Wiltshire t/a London Gutter Clean LTD",
-    icon: <PiBuildingOffice />,
-  },
-  {
-    title: "Company Number- 13064005 Registered in England & Wales",
-    icon: <RiHomeOfficeLine />,
-  },
-  {
-    title: "21 Mead Road, Richmond, Middlesex, TW10 7LG",
-    icon: <IoLocationOutline />,
-  },
-  {
-    title: "0208 945 5711",
-    icon: <MdOutlineCall />,
-  },
-  {
-    title: "info@londongutterclean.co.uk",
-    icon: <MdMailOutline />,
-  },
-];
-const Footer = () => {
+const Footer: FC = () => {
+  // Navigation links data
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "Portfolios", path: "/portfolios" },
+    { name: "Services", path: "/services" },
+    { name: "Contact Us", path: "/contact" },
+    { name: "Give a Review", path: "/reviews" },
+  ];
+
+  // Service links data
+  const serviceLinks = [
+    { name: "Lath & Plaster", path: "/services/lath-plaster" },
+    { name: "EFIS", path: "/services/efis" },
+    { name: "Veneer", path: "/services/veneer" },
+    { name: "Siding", path: "/services/siding" },
+  ];
+
   return (
-    <div className="bg-[#0F4262] py-20">
-     <div className="container">
-     <div className=" grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-5">
-        <div className="flex flex-col gap-6">
-          <div className="h-24 w-56 ">
-            <Image
-              src={logo}
-              className="object-contain"
-              height={400}
-              width={400}
-              alt="image"
-            />
-          </div>
-          <p className="text-gray-light text-base font-medium">
-            We’ll ensure your gutters function flawlessly and enhance the
-            overall look of your London home or business.
-          </p>
-          <div className="flex items-center gap-4">
-            <div className="bg-[#36607b] p-2 rounded-md text-white">
-              <FaFacebookF size={18} />
-            </div>
-            <div className="bg-[#36607b] p-2 rounded-md text-white">
-              <RiLinkedinFill size={20} />
-            </div>
-            <div className="bg-[#36607b] p-2 rounded-md text-white">
-              <IoLogoWhatsapp size={20} />
-            </div>
-          </div>
-        </div>
+    <footer className="bg-[#1e3a68] text-white py-8 sm:py-12">
+      <div className="absolute bottom-0 left-0 w-60 h-60 sm:w-100 sm:h-100 md:w-120 md:h-120 opacity-100">
+        <Image
+          src={WaveLeft}
+          alt="Pattern"
+          fill
+          className="object-contain"
+        />
+      </div>
+      <div className="absolute bottom-0 right-0 w-60 h-60 sm:w-100 sm:h-100 md:w-120 md:h-120 opacity-30">
+        <Image
+          src={WaveRight}
+          alt="Pattern"
+          fill
+          className="object-contain"
+        />
+      </div>
+      <div className="container mx-auto px-4 sm:px-6">
         <div>
-          <div className=" w-full text-base text-white">
-            <NavMenu className="flex-col mb-4" />
-            <div className="ps-1  w-full max-w-44">
-              <Accordion isCompact className="">
-                <AccordionItem
-                  key="1"
-                  aria-label="Other Service"
-                  title={<span className="text-white">Other Service</span>}
-                >
-                  <div className=" ps-1">
-                    <Link href={"/gutter-fascia-soffit-repair-replacement"}>
-                      <div className="cursor-pointer hover:text-green-primary  p-2 mb-2 rounded">
-                        Gutter, Fascia & Soffit Repair/Replacement
-                      </div>
-                    </Link>{" "}
-                    <Link href={"/pressure-washing"}>
-                      <div className="cursor-pointer hover:text-green-primary  p-2 rounded">
-                        Pressure Washing
-                      </div>
-                    </Link>
-                  </div>
-                </AccordionItem>
-              </Accordion>
+          <img src="" alt="" />
+        </div>
+        <div className="flex flex-col md:flex-row gap-8 lg:gap-12 xl:gap-16 text-sm text-gray-200">
+          {/* Column 1: Logo & Description */}
+          <div className="w-full md:w-1/3 flex flex-col items-center md:items-start text-center md:text-left space-y-3">
+            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3">
+              <Image
+                src={Logo}
+                alt="Jimenez Logo"
+                width={60}
+                height={68}
+                className="w-12 sm:w-14 md:w-16"
+              />
+              <h2 className="text-3xl sm:text-2xl text-white playfair-font font-bold">
+                Jimenez Plastering Inc.
+              </h2>
             </div>
+            <p className="text-[#97A4BA] font-poppins text-sm sm:text-base font-normal">
+              We'll ensure your gutters function flawlessly and enhance the
+              overall look of your London home or business.
+            </p>
           </div>
-        </div>
-        <div>
-          {thirdRow?.map((item, i) => (
-            <Link href={item?.link}    key={i} >
-            <div
-           
-              className="cursor-pointer text-white hover:text-green-primary pb-5 rounded"
-              >
-              {item?.title}
-            </div>
-              </Link>
-          ))}
-        </div>
-        <div className="text-white">
-          <h3 className="text-xl font-bold mb-6">Get In Touch With us Today</h3>
 
-          {forthRow?.map((item, i) => (
-            <div
-              key={i}
-              className="cursor-pointer text-gray-light hover:text-green-primary p-3 rounded flex items-start gap-2"
-            >
-              <div>{item?.icon}</div>
-              <p className="w-full -mt-1"> {item?.title}</p>
+          {/* Column 2: Navigation + Services */}
+          <div className="w-full md:w-1/3 grid grid-cols-2 gap-4 sm:gap-6 text-center md:text-left">
+            {/* Navigation Links */}
+            <div className="space-y-1 sm:space-y-2">
+              <ul className="space-y-1 sm:space-y-2">
+                {navLinks.map((link, idx) => (
+                  <li key={idx}>
+                    <Link
+                      href={link.path}
+                      className="hover:text-white font-poppins text-sm sm:text-base"
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
-          ))}
+
+            {/* Services Links */}
+            <div className="space-y-1 sm:space-y-2">
+              <ul className="space-y-1 sm:space-y-2">
+                {serviceLinks.map((service, idx) => (
+                  <li key={idx}>
+                    <Link
+                      href={service.path}
+                      className="hover:text-white font-poppins text-sm sm:text-base"
+                    >
+                      {service.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          {/* Column 3: Contact Info */}
+          <div className="w-full md:w-1/3 space-y-3 sm:space-y-4 flex flex-col items-center md:items-start text-center md:text-left">
+            <h3 className="font-semibold text-white text-base sm:text-lg xl:text-xl font-poppins">
+              Get In Touch With us Today
+            </h3>
+            <div className="flex items-start gap-2 sm:gap-3">
+              <PiBuildingApartmentLight className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 sm:mt-1 flex-shrink-0" />
+              <p className="text-sm sm:text-base">
+                275 Justin Drive
+                <br />
+                Cottonwood AZ, 86326
+              </p>
+            </div>
+            <div className="flex items-center gap-2 sm:gap-3">
+              <Phone className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+              <a
+                href="tel:9286349065"
+                className="text-sm sm:text-base hover:text-white"
+              >
+                928-634-9065
+              </a>
+            </div>
+            <div className="flex items-center gap-2 sm:gap-3">
+              <Mail className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+              <a
+                href="mailto:Jimenezplastering@gmail.com"
+                className="text-sm sm:text-base break-all hover:text-white"
+              >
+                Jimenezplastering@gmail.com
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="w-full border-t my-10 md:my-20"></div>
-      <AreasWeServe/>
-     </div>
-    </div>
+    </footer>
   );
 };
 
