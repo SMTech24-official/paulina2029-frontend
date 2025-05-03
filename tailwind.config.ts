@@ -12,6 +12,8 @@ export default {
     extend: {
       fontFamily: {
         inter: ["var(--font-inter)"],
+        playfair:["Playfair Display", "serif"],
+        poppins:["Poppins", "sans-serif"]
       },
       colors: {
         "gray-light": "#86A0B0",

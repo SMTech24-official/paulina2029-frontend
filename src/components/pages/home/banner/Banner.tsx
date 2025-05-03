@@ -19,7 +19,7 @@ const Banner = () => {
           />
           <p className="font-bold">Trusted Traders Code of Conduct</p>
         </span>
-        <h1 className="mb-6 text-xl md:text-3xl lg:text-5xl font-extrabold tracking-[-0.576px] max-w-[752px]">
+        <h1 className="mb-6 text-xl md:text-3xl lg:text-5xl font-extrabold tracking-[-0.576px] max-w-[752px] ">
           At London Gutter Clean & Repair, we believe in traditional techniques
           for a thorough clean But we&apos;re always ready to adept with our gutter
           vacuum when needed!
