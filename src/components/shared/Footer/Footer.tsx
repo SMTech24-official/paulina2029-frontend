@@ -45,16 +45,16 @@ const Footer: FC = () => {
       </div>
       <div className="container mx-auto px-4 sm:px-6">
         <div>
-          <Image src="" alt="" width={0} height={0} className="w-0 h-0" />
+          <img src="" alt="" />
         </div>
         <div className="flex flex-col md:flex-row gap-8 lg:gap-12 xl:gap-16 text-sm text-gray-200">
           {/* Column 1: Logo & Description - Changed to items-start for all screens */}
           <div className="w-full md:w-1/3 flex flex-col items-start text-left space-y-3">
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3">
-              <Image 
-                src={Logo} 
-                alt="Jimenez Logo" 
-                width={60} 
+              <Image
+                src={Logo}
+                alt="Jimenez Logo"
+                width={60}
                 height={68}
                 className="w-12 sm:w-14 md:w-16"
               />
@@ -63,7 +63,7 @@ const Footer: FC = () => {
               </h2>
             </div>
             <p className="text-[#97A4BA] font-poppins text-sm sm:text-base font-normal">
-              We&apos;ll ensure your gutters function flawlessly and enhance the
+              We'll ensure your gutters function flawlessly and enhance the
               overall look of your London home or business.
             </p>
           </div>

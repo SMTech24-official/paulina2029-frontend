@@ -10,15 +10,18 @@ export default function TestimonialSection() {
       <div className="mb-8 sm:mb-12">
         <div className="flex items-center mb-3 sm:mb-4">
           <div className="w-8 h-px bg-gray-400 mr-3"></div>
-          <p className="text-[#231F20] md:text-xl text-base font-semibold">Testimonials</p>
+          <span className="text-base sm:text-lg font-medium font-poppins">
+            Testimonial
+          </span>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-start gap-4 sm:gap-6">
           <div>
+            {/* Header section */}
             <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold font-playfair text-gray-900 max-w-2xl leading-snug sm:leading-tight">
-              We&apos;re the Plastering Experts in Northern Arizona You Can Trust
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
+              We're the Plastering Experts in Northern Arizona You Can Trust
             </h2>
-            
             <p className="text-blue-700 mt-3 sm:mt-4 max-w-3xl text-sm sm:text-base font-poppins">
               Jimenez Plastering, with over 30 years of experience, delivers
               reliable, high-quality plastering services for residential and
@@ -35,8 +38,8 @@ export default function TestimonialSection() {
       {/* Testimonial Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-8 sm:mt-12">
         {reviews.map((testimonial, index) => (
-          <div 
-            key={index} 
+          <div
+            key={index}
             className="bg-white p-4 sm:p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
           >
             {/* Star Rating */}
@@ -49,12 +52,14 @@ export default function TestimonialSection() {
               ))}
             </div>
 
-            {/* Quote */}
-            <p className="font-semibold text-base sm:text-lg mb-2 font-poppins">{testimonial.quote}</p>
-
+            {/* Quote section */}
+            <p className="font-semibold text-base sm:text-lg mb-2 font-poppins">
+              {`"${testimonial.quote}"`}
+            </p>
             {/* Testimonial Text */}
-            <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm font-poppins">{testimonial.text}</p>
-
+            <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm font-poppins">
+              {testimonial.text}
+            </p>
             {/* Author Info */}
             <div className="flex items-center mt-3 sm:mt-4">
               <div className="rounded-full overflow-hidden mr-2 sm:mr-3 w-8 h-8 sm:w-10 sm:h-10">
@@ -67,8 +72,12 @@ export default function TestimonialSection() {
                 />
               </div>
               <div>
-                <p className="font-medium text-sm sm:text-base font-poppins">{testimonial.author}</p>
-                <p className="text-gray-500 text-xs sm:text-sm font-poppins">{testimonial.date}</p>
+                <p className="font-medium text-sm sm:text-base font-poppins">
+                  {testimonial.author}
+                </p>
+                <p className="text-gray-500 text-xs sm:text-sm font-poppins">
+                  {testimonial.date}
+                </p>
               </div>
             </div>
           </div>
