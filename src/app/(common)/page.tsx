@@ -1,3 +1,4 @@
+import HappenBanner from "@/components/cards/HappenBanner/HappenBanner";
 import Banner from "@/components/pages/home/banner/Banner";
 import PortfolioSwiper from "@/components/pages/home/Our-Portfolio/Portfolio";
 import OurService from "@/components/pages/home/OurService/OurService";
@@ -26,7 +27,7 @@ const Home = () => {
       <TrustedByHundreds />
       <YourTrustedPartner />
       <OurService />
-      <Reviews />
+      <HappenBanner/>
       <TestimonialSection/>
       <BlogComponent  smallTitle="Blog" mainTitle="Insights & Inspiration: The LondonGutterClean Blog" />
       <ImproveProperty/>

@@ -28,20 +28,20 @@ const Footer: FC = () => {
   return (
     <footer className="bg-[#1e3a68] text-white py-8 sm:py-12">
       <div className="absolute bottom-0 left-0 w-60 h-60 sm:w-100 sm:h-100 md:w-120 md:h-120 opacity-100">
-        <Image
+        {/* <Image
           src={WaveLeft}
           alt="Pattern"
           fill
           className="object-contain"
-        />
+        /> */}
       </div>
       <div className="absolute bottom-0 right-0 w-60 h-60 sm:w-100 sm:h-100 md:w-120 md:h-120 opacity-30">
-        <Image
+        {/* <Image
           src={WaveRight}
           alt="Pattern"
           fill
           className="object-contain"
-        />
+        /> */}
       </div>
       <div className="container mx-auto px-4 sm:px-6">
         <div>

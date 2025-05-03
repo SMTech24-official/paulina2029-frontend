@@ -15,7 +15,7 @@ export default function AboutUs() {
           backgroundImage: "url('/images/about-hero.jpg')",
         }}
       >
-        <div className="absolute inset-0 flex flex-col justify-center px-4 sm:px-6 md:px-12 bg-black bg-opacity-40">
+        <div className="absolute inset-0 flex flex-col justify-center px-4 sm:px-6 md:px-12 bg-black bg-opacity-60">
           <div className="container mx-auto">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 sm:mb-4">
               About US
