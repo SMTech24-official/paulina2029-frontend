@@ -27,7 +27,26 @@ const Footer: FC = () => {
 
   return (
     <footer className="bg-[#1e3a68] text-white py-8 sm:py-12">
-      <div className="container mx-auto px-6 sm:px-6"> {/* Increased left padding on mobile */}
+      <div className="absolute bottom-0 left-0 w-60 h-60 sm:w-100 sm:h-100 md:w-120 md:h-120 opacity-100">
+        <Image
+          src={WaveLeft}
+          alt="Pattern"
+          fill
+          className="object-contain"
+        />
+      </div>
+      <div className="absolute bottom-0 right-0 w-60 h-60 sm:w-100 sm:h-100 md:w-120 md:h-120 opacity-30">
+        <Image
+          src={WaveRight}
+          alt="Pattern"
+          fill
+          className="object-contain"
+        />
+      </div>
+      <div className="container mx-auto px-4 sm:px-6">
+        <div>
+          <img src="" alt="" />
+        </div>
         <div className="flex flex-col md:flex-row gap-8 lg:gap-12 xl:gap-16 text-sm text-gray-200">
           {/* Column 1: Logo & Description - Changed to items-start for all screens */}
           <div className="w-full md:w-1/3 flex flex-col items-start text-left space-y-3">
@@ -44,7 +63,7 @@ const Footer: FC = () => {
               </h2>
             </div>
             <p className="text-[#97A4BA] font-poppins text-sm sm:text-base font-normal">
-              We&apos;ll ensure your gutters function flawlessly and enhance the
+              We'll ensure your gutters function flawlessly and enhance the
               overall look of your London home or business.
             </p>
           </div>

@@ -22,8 +22,7 @@ export default function Navbar() {
             <Image
               src={Logo}
               alt="Jimenez Plastering Logo"
-              width={40}
-              height={40}
+              fill
               className="object-contain"
             />
           </div>

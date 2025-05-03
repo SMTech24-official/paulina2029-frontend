@@ -5,8 +5,20 @@
 
 body {
   font-family: "Inter", sans-serif;
-  /* background: var(--background); */
-  /* color: var(--foreground); */
+
+}
+
+
+.portfolio {
+  background-image: url("/assets/portfolio.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 
 

@@ -1,4 +1,5 @@
 import Banner from "@/components/pages/home/banner/Banner";
+import PortfolioSwiper from "@/components/pages/home/Our-Portfolio/Portfolio";
 import OurService from "@/components/pages/home/OurService/OurService";
 import Reviews from "@/components/pages/home/Reviews/Reviews";
 import TrustedByHundreds from "@/components/pages/home/TrustedByHundreds/TrustedByHundreds";
@@ -29,6 +30,8 @@ const Home = () => {
       <TestimonialSection/>
       <BlogComponent  smallTitle="Blog" mainTitle="Insights & Inspiration: The LondonGutterClean Blog" />
       <ImproveProperty/>
+
+      <PortfolioSwiper />
     </>
   );
 };
