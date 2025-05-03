@@ -1,8 +1,10 @@
 import HappenBanner from "@/components/cards/HappenBanner/HappenBanner";
+import ContactPage from "@/components/ContactUs/ContactUs";
 import Banner from "@/components/pages/home/banner/Banner";
 import PortfolioSwiper from "@/components/pages/home/Our-Portfolio/Portfolio";
 import OurService from "@/components/pages/home/OurService/OurService";
 import TrustedByHundreds from "@/components/pages/home/TrustedByHundreds/TrustedByHundreds";
+import YourTrustedPartner from "@/components/pages/home/YourTrustedPartner/YourTrustedPartner";
 import BlogComponent from "@/components/shared/blog/BlogComponent";
 import ImproveProperty from "@/components/shared/ImproveProperty/ImproveProperty";
 import TestimonialSection from "@/components/Testimonial/Testimonial";
@@ -22,9 +24,14 @@ const Home = () => {
       <Banner />
       <TrustedByHundreds />
       <OurService />
-      <HappenBanner />
-      <TestimonialSection />
+      <HappenBanner/>
+      <TestimonialSection/>
+      <BlogComponent  smallTitle="Blog" mainTitle="Insights & Inspiration: The LondonGutterClean Blog" />
+      <ImproveProperty/>
+
       <PortfolioSwiper />
+<ContactPage/>
+ 
     </>
   );
 };

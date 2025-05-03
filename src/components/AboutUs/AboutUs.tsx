@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+// import HeroBanner from "@/assets/about/about-hero.jpg";
 import HistoryImg from "@/assets/about/about-history.jpg";
 import GoalImg from "@/assets/about/about-goal.png";
 

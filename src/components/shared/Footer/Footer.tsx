@@ -44,6 +44,9 @@ const Footer: FC = () => {
         /> */}
       </div>
       <div className="container mx-auto px-4 sm:px-6">
+        <div>
+          <img src="" alt="" />
+        </div>
         <div className="flex flex-col md:flex-row gap-8 lg:gap-12 xl:gap-16 text-sm text-gray-200">
           {/* Column 1: Logo & Description - Changed to items-start for all screens */}
           <div className="w-full md:w-1/3 flex flex-col items-start text-left space-y-3">
@@ -60,7 +63,6 @@ const Footer: FC = () => {
               </h2>
             </div>
             <p className="text-[#97A4BA] font-poppins text-sm sm:text-base font-normal">
-              {/* eslint-disable-next-line react/no-unescaped-entities */}
               We'll ensure your gutters function flawlessly and enhance the
               overall look of your London home or business.
             </p>

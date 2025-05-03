@@ -5,17 +5,14 @@ import { realTestimonials as reviews } from "./testimonialData.js";
 
 export default function TestimonialSection() {
   return (
-   <div className="">
-     <section className="w-full  bg-[#E6F4EC4D] bg-opacity-30] pb-24">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 max-w-7xl">
-        {/* Header */}
-        <div className="mb-8 sm:mb-12">
-          <div className="flex items-center mb-3 sm:mb-4">
-            <div className="w-8 h-px bg-gray-400 mr-3"></div>
-            <span className="text-base sm:text-lg font-medium font-poppins">
-              Testimonial
-            </span>
-          </div>
+    <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 max-w-7xl">
+      {/* Header */}
+      <div className="mb-8 sm:mb-12">
+        <div className="flex items-center mb-3 sm:mb-4">
+          <div className="w-8 h-px bg-gray-400 mr-3"></div>
+          <span className="text-base sm:text-lg font-medium font-poppins">
+            Testimonial
+          </span>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-start gap-4 sm:gap-6">
@@ -32,7 +29,7 @@ export default function TestimonialSection() {
             </p>
           </div>
 
-          <Button className="bg-green-600 hover:bg-green-700 text-white rounded-md px-4 sm:px-6 py-2 sm:py-3 h-auto text-sm sm:text-base">
+          <Button className="">
             See All Reviews
           </Button>
         </div>
