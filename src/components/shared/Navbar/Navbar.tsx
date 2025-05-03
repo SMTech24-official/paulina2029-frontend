@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import Logo from "@/assets/logo/logo.png"
+import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
   return (
@@ -64,12 +65,14 @@ export default function Navbar() {
               928-634-9065
             </a>
           </div>
-          <Link 
+         <Button >
+         <Link 
             href="/contact" 
-            className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors font-medium"
+            className=""
           >
             Contact Us
           </Link>
+         </Button>
         </div>
       </div>
     </header>
