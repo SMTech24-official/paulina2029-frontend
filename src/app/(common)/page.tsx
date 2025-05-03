@@ -8,6 +8,7 @@ import YourTrustedPartner from "@/components/pages/home/YourTrustedPartner/YourT
 import BlogComponent from "@/components/shared/blog/BlogComponent";
 import ImproveProperty from "@/components/shared/ImproveProperty/ImproveProperty";
 import TrustedTrader from "@/components/shared/TrustedTrader/TrustedTrader";
+import TestimonialSection from "@/components/Testimonial/Testimonial";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -27,7 +28,7 @@ const Home = () => {
       <YourTrustedPartner />
       <OurService />
       <Reviews />
-      <TrustedTrader/>
+      <TestimonialSection/>
       <BlogComponent  smallTitle="Blog" mainTitle="Insights & Inspiration: The LondonGutterClean Blog" />
       <ImproveProperty/>
       <PortfolioSwiper />
