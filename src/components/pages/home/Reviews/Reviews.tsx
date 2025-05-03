@@ -3,7 +3,7 @@ import userImage1 from "@/assets/userImage.png";
 import userImage2 from "@/assets/userImage2.png";
 import userImage3 from "@/assets/userImage3.png";
 import userImage4 from "@/assets/userImage4.png";
-import ReviewCard from "@/components/cards/ReviewCard/ReviewCard";
+import ReviewCard from "@/components/cards/HappenBanner/HappenBanner";
 import TitleAndDescription from "@/components/shared/TitleAndDescription/TitleAndDescription";
 
 const cardData = [

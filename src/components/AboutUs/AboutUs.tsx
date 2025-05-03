@@ -10,10 +10,9 @@ export default function AboutUs() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <section
-        className="relative h-64 md:h-80 bg-gray-800"
+        className="relative h-64 md:h-80 bg-gray-800 opacity-70 bg-cover bg-no-repeat"
         style={{
           backgroundImage: "url('/images/about-hero.jpg')",
-          backgroundSize: "cover",
         }}
       >
         <div className="absolute inset-0 flex flex-col justify-center px-4 sm:px-6 md:px-12 bg-black bg-opacity-40">
