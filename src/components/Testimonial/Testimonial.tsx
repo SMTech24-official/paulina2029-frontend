@@ -10,13 +10,13 @@ export default function TestimonialSection() {
       <div className="mb-8 sm:mb-12">
         <div className="flex items-center mb-3 sm:mb-4">
           <div className="w-8 h-px bg-gray-400 mr-3"></div>
-          <span className="text-base sm:text-lg font-medium font-poppins">Testimonial</span>
+          <p className="text-[#231F20] md:text-xl text-base font-semibold">Testimonials</p>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-start gap-4 sm:gap-6">
           <div>
             <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold font-playfair text-gray-900 max-w-2xl leading-snug sm:leading-tight">
-              We're the Plastering Experts in Northern Arizona You Can Trust
+              We&apos;re the Plastering Experts in Northern Arizona You Can Trust
             </h2>
             
             <p className="text-blue-700 mt-3 sm:mt-4 max-w-3xl text-sm sm:text-base font-poppins">
@@ -26,7 +26,7 @@ export default function TestimonialSection() {
             </p>
           </div>
 
-          <Button className="bg-green-600 hover:bg-green-700 text-white rounded-md px-4 sm:px-6 py-2 sm:py-3 h-auto text-sm sm:text-base">
+          <Button className="">
             See All Reviews
           </Button>
         </div>
@@ -50,7 +50,7 @@ export default function TestimonialSection() {
             </div>
 
             {/* Quote */}
-            <p className="font-semibold text-base sm:text-lg mb-2 font-poppins">"{testimonial.quote}"</p>
+            <p className="font-semibold text-base sm:text-lg mb-2 font-poppins">{testimonial.quote}</p>
 
             {/* Testimonial Text */}
             <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm font-poppins">{testimonial.text}</p>

@@ -59,7 +59,7 @@ const ImageTitleAndDescription: FC<ImageTitleAndDescriptionProps> = ({
                   imageSrc={optionalImage}
                   alt="image"
                   className={cn(
-                    " rounded-md overflow-hidden absolute bottom-0 right-0  lg:-bottom-10 lg:-right-7 xl:-right-10 shadow-md",
+                    " rounded-md w-[100px] h-[100px] overflow-hidden absolute bottom-0 right-0  lg:-bottom-10 lg:-right-7 xl:-right-10 shadow-md",
                     optionalImageClassName
                   )}
                 />
