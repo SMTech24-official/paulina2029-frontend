@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ChevronDown, Menu, X } from "lucide-react";
 import Logo from "@/assets/logo/logo.png";
 import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -109,12 +110,15 @@ export default function Navbar() {
                 928-634-9065
               </a>
             </div>
-            <Link
-              href="/contact"
-              className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors font-medium"
-            >
-              Contact Us
-            </Link>
+            <Button>
+         <Link
+                href="/contact"
+                
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact Us
+              </Link>
+         </Button>
           </div>
         </div>
 
@@ -186,13 +190,15 @@ export default function Navbar() {
                   928-634-9065
                 </a>
               </div>
-              <Link
+         <Button className="w-full">
+         <Link
                 href="/contact"
-                className="block w-full text-center bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors font-medium"
+                
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact Us
               </Link>
+         </Button>
             </div>
           </div>
         )}
