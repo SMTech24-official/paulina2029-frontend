@@ -1,5 +1,10 @@
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 import React from 'react';
+import CardImg1 from "@/assets/service-card/card1.png"
+import CardImg2 from "@/assets/service-card/card2.png"
+import CardImg3 from "@/assets/service-card/card3.png" 
+import CardImg4 from "@/assets/service-card/card4.png"
 
 type ServiceCardProps = {
   title: string;
@@ -19,7 +24,7 @@ const ServicesSection: React.FC = () => {
   const services = [
     {
       title: "Lath & Plaster",
-      description: "The most common exterior finish used in the Western United States providing high durability and architectural flexibility."
+      description: "The most common exterior finish used in the Western United States providing high durability and architectural flexibility.",
     },
     {
       title: "EFIS",
@@ -56,7 +61,7 @@ const ServicesSection: React.FC = () => {
               Protecting Your Home, One Service at a Time
             </h2>
             <div className='flex justify-between gap-50'>
-              <p className="text-blue-700 mt-3 sm:mt-4 max-w-3xl text-sm sm:text-base font-poppins">
+              <p className="text-[#496187] mt-3 sm:mt-4 max-w-3xl text-sm sm:text-base font-poppins">
               From inspections to full roof replacements, we deliver quality workmanship backed by years of experience.
             </p>
             <Button className="bg-green-600 hover:bg-green-700 text-white rounded-md px-4 sm:px-6 py-2 sm:py-3 h-auto text-sm sm:text-base ml-72 font-poppins">
@@ -68,15 +73,85 @@ const ServicesSection: React.FC = () => {
         </div>
         
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => (
-            <ServiceCard 
-              key={index}
-              title={service.title}
-              description={service.description}
+        <div className="space-y-6 mt-10">
+        {/* First Row */}
+        <div className="grid grid-cols-4 gap-6">
+          <div className="col-span-1 relative rounded-lg overflow-hidden shadow-md">
+            <Image
+              src={CardImg2}
+              alt={services[0].title}
+              width={600}
+              height={1000}
+              className="object-fit w-50 h-full"
             />
-          ))}
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+              <h3 className="text-white font-bold text-lg mb-1">
+                {services[0].title}
+              </h3>
+              <p className="text-white text-sm">
+                {services[0].description}
+              </p>
+            </div>
+          </div>
+          <div className="col-span-3 relative rounded-lg overflow-hidden shadow-md">
+            <Image
+              src={CardImg1}
+              alt={services[1].title}
+              width={600}
+              height={1000}
+              className="object-fit w-full h-full"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+              <h3 className="text-white font-bold text-lg mb-1">
+                {services[1].title}
+              </h3>
+              <p className="text-white text-sm">
+                {services[1].description}
+              </p>
+            </div>
+          </div>
         </div>
+
+        {/* Second Row */}
+        <div className="grid grid-cols-4 gap-6">
+          <div className="col-span-3 relative rounded-lg overflow-hidden shadow-md">
+            <Image
+              src={CardImg3}
+              alt={services[2].title}
+              width={600}
+              height={1000}
+              className="object-fit w-full h-full"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+              <h3 className="text-white font-bold text-lg mb-1">
+                {services[2].title}
+              </h3>
+              <p className="text-white text-sm">
+                {services[2].description}
+              </p>
+            </div>
+          </div>
+          <div className="col-span-1 relative rounded-lg overflow-hidden shadow-md">
+            <Image
+              src={CardImg4}
+              alt={services[3].title}
+              width={600}
+              height={1000}
+              className="object-fit w-50 h-full"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+              <h3 className="text-white font-bold text-lg mb-1">
+                {services[3].title}
+              </h3>
+              <p className="text-white text-sm">
+                {services[3].description}
+              </p>
+            </div>
+          </div>
+        </div>
+	</div>
+
+
       </div>
     </section>
   );
