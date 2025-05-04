@@ -1,5 +1,5 @@
 // Sample testimonial data
-const avatarImg = "/images/user.png";
+const avatarImg = "@/assetes;
 
 export const testimonials = Array(8).fill({
   rating: 5,
