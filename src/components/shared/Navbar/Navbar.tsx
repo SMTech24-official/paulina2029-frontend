@@ -35,7 +35,7 @@ export default function Navbar() {
           </Link>
           <span className="text-[#CBCBCB]">|</span>
           <Link
-            href="/about"
+            href="/about-us"
             className="text-gray-700 hover:text-green-600 transition-colors"
           >
             About Us

@@ -4,35 +4,18 @@ import Image from "next/image";
 // import HeroBanner from "@/assets/about/about-hero.jpg";
 import HistoryImg from "@/assets/about/about-history.jpg";
 import GoalImg from "@/assets/about/about-goal.png";
+import HeroSection from "../SmallHero/SmallHero";
 
 export default function AboutUs() {
   return (
     <main className="min-h-screen">
-      {/* Hero Section */}
-      <section
-        className="relative h-64 md:h-80 bg-gray-800 opacity-70 bg-cover bg-no-repeat"
-        style={{
-          backgroundImage: "url('/images/about-hero.jpg')",
-        }}
-      >
-        <div className="absolute inset-0 flex flex-col justify-center px-4 sm:px-6 md:px-12 bg-black bg-opacity-60">
-          <div className="container mx-auto">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2 sm:mb-4">
-              About US
-            </h1>
-            <p className="text-white text-sm sm:text-base max-w-2xl whitespace-normal">
-              Founded in 1998 by Gonzalo Jimenez with generations of plasterers
-              before him. Jimenez Plastering is a family run corporation serving
-              Northern Arizona since 1998. Specializing in large scale
-              residential and commercial projects in lath and plastering.
-              Jimenez Plastering has been the trusted and preferred stucco
-              contractor in Northern Arizona.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* History Section */}
+     
+     <HeroSection
+      title="About Us"
+      description="Founded in 1998 by Gonzalo Jimenez with generations of plasterers before him. Jimenez Plastering is a family-run corporation serving Northern Arizona since 1998. Specializing in large-scale residential and commercial projects in lath and plastering. Jimenez Plastering has been the trusted and preferred stucco contractor in Northern Arizona."
+      bgClass="about" 
+    />
+  
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">

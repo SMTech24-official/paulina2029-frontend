@@ -3,7 +3,7 @@ import ExceptionalCustomerSatisfaction from "@/assets/icons/ExceptionalCustomerS
 import QuickAndEfficientService from "@/assets/icons/QuickAndEfficientService.png";
 import TrustedProfessionals from "@/assets/icons/TrustedProfessionals.png";
 import CardWithTitle from "@/components/cards/CardWithTitle/CardWithTitle";
-import TitleAndDescription from "@/components/shared/TitleAndDescription/TitleAndDescription";
+
 
 const cardData = [
   {
@@ -38,14 +38,7 @@ const YourTrustedPartner = () => {
       <div className="bg-[#0F4262] py-10 md:py-20">
         <div className="container">
           <div className="mb-4 md:mb-12">
-            <TitleAndDescription
-              smallTitle="Why Us"
-
-              mainTitle="Your Trusted Partner for Spotless Gutters"
-              className="text-white"
-              borderClassName="border-white"
-              smallTitleClassName="text-white mb-1"
-            />
+          
           </div>{" "}
           <div className=" grid grid-cols-1 xs:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-5">
             {cardData?.map((item, i) => (
