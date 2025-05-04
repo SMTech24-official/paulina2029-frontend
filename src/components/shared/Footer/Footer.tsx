@@ -13,7 +13,7 @@ const Footer: FC = () => {
   // Navigation links data
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "About Us", path: "/about" },
+    { name: "About Us", path: "/about-us" },
     { name: "Portfolios", path: "/portfolios" },
     { name: "Services", path: "/services" },
     { name: "Contact Us", path: "/contact" },
@@ -22,21 +22,16 @@ const Footer: FC = () => {
 
   // Service links data
   const serviceLinks = [
-    { name: "Lath & Plaster", path: "/services/lath-plaster" },
-    { name: "EFIS", path: "/services/efis" },
-    { name: "Veneer", path: "/services/veneer" },
-    { name: "Siding", path: "/services/siding" },
+    { name: "Lath & Plaster", path: "/services-lath-&-plaster" },
+    { name: "EFIS", path: "/services-efis" },
+    { name: "Veneer", path: "/services-veneer" },
+    { name: "Siding", path: "/services-siding" },
   ];
 
   return (
     <footer className="footer text-white py-8 sm:py-12">
       <div className="absolute bottom-0 left-0 w-60 h-60 sm:w-100 sm:h-100 md:w-120 md:h-120 opacity-100">
-        {/* <Image
-          src={WaveLeft}
-          alt="Pattern"
-          fill
-          className="object-contain"
-        /> */}
+       
       </div>
       <div className="absolute bottom-0 right-0 w-60 h-60 sm:w-100 sm:h-100 md:w-120 md:h-120 opacity-30">
     

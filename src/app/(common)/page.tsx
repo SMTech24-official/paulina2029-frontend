@@ -10,11 +10,11 @@ import TestimonialSection from "@/components/Testimonial/Testimonial";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "London Gutter Cleaning | Professional Gutter & Exterior Services",
+  title: "",
   description:
-    "Keep your gutters clean and functional with London Gutter Cleaning. Offering professional services for residential and commercial properties across London.",
+    "",
   keywords:
-    "gutter cleaning, London gutter services, professional gutter cleaning, residential gutter cleaning, commercial gutter cleaning, fascia soffit repairs",
+    "",
 };
 
 const Home = () => {

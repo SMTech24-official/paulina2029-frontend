@@ -34,6 +34,31 @@ body {
   align-items: start;
 }
 
+.contact2 {
+  background-image: url("/assets/contact-hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: start; */
+}
+
+.review {
+  background-image: url("/assets/review-hero.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: start; */
+}
+
+
 
 .contact {
   background-image: url("/assets/portfolio3.png");
@@ -109,7 +134,22 @@ input[type=number] {
   }
 }
 
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-in-out both;
+  }
 
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
 
 
 

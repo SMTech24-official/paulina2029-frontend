@@ -5,6 +5,7 @@ import Image from "next/image";
 import HistoryImg from "@/assets/about/about-history.jpg";
 import GoalImg from "@/assets/about/about-goal.png";
 import HeroSection from "../SmallHero/SmallHero";
+import ContactPage from "../ContactUs/ContactUs";
 
 export default function AboutUs() {
   return (
@@ -29,10 +30,10 @@ export default function AboutUs() {
               />
             </div>
             <div className="order-1 md:order-2">
-              <div className="flex items-center mb-4">
-                <div className="h-px bg-gray-300 w-10 mr-3"></div>
-                <span className="text-gray-500">History</span>
-              </div>
+            <div className="flex items-center gap-2 mb-2">
+            <div className="w-6 h-[1px] bg-emerald-600"></div>
+            <p className="text-[#231F20] md:text-xl text-base font-semibold">History</p>
+          </div>
               <h2 className="text-3xl font-bold mb-6">
                 30+ Years of Expertise, Innovation, and Family Tradition in the
                 Plastering Industry
@@ -71,10 +72,10 @@ export default function AboutUs() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
-              <div className="flex items-center mb-4">
-                <div className="h-px bg-gray-300 w-10 mr-3"></div>
-                <span className="text-gray-500">Our goal</span>
-              </div>
+            <div className="flex items-center gap-2 mb-2">
+            <div className="w-6 h-[1px] bg-emerald-600"></div>
+            <p className="text-[#231F20] md:text-xl text-base font-semibold">Our goal</p>
+          </div>
               <h2 className="text-3xl font-bold mb-6">
                 Delivering Exceptional, Custom-Plastered Exteriors with
                 Precision, Durability, and a Commitment to Client Satisfaction
@@ -106,6 +107,8 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
+
+      <ContactPage />
     </main>
   );
 }

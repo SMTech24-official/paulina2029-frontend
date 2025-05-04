@@ -18,7 +18,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "London Gutter Cleaning Service",
+  title: "",
   description:
     "Award Winning Service For London Gutter Cleaning, Repairs & Replacement",
 };

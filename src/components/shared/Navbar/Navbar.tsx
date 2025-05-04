@@ -59,22 +59,28 @@ export default function Navbar() {
               <div className="absolute top-0 hidden group-hover:block  bg-white shadow-lg rounded-md mt-2 min-w-[200px] border border-gray-100 z-10">
                 <div className="py-1">
                   <Link
-                    href="/services/residential"
+                    href="/services-lath-&-plaster"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600"
                   >
-                    Residential
+                 Lath & Plaster
                   </Link>
                   <Link
-                    href="/services/commercial"
+                    href="/services-siding"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600"
                   >
-                    Commercial
+                  Siding
                   </Link>
                   <Link
-                    href="/services/repairs"
+                    href="/services-efis"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600"
                   >
-                    Repairs
+               EFIS
+                  </Link>
+                  <Link
+                    href="/services-veneer"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600"
+                  >
+            Veneer
                   </Link>
                 </div>
               </div>

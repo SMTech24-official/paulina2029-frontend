@@ -10,7 +10,7 @@ import Linkdin1 from "../icons/Linkdin"
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen contact flex items-center justify-center p-4 sm:p-6 md:p-8 playfair-font">
+    <div className="min-h-screen contact flex items-center justify-center p-4 sm:p-6 md:p-8 font-playfair">
       <div className="w-full max-w-6xl mt-10 md:mt-20 overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Left Column - Contact Information */}
