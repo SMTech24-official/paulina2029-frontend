@@ -3,8 +3,6 @@ import Banner from "@/components/pages/home/banner/Banner";
 import PortfolioSwiper from "@/components/pages/home/Our-Portfolio/Portfolio";
 import OurService from "@/components/pages/home/OurService/OurService";
 import TrustedByHundreds from "@/components/pages/home/TrustedByHundreds/TrustedByHundreds";
-import BlogComponent from "@/components/shared/blog/BlogComponent";
-import ImproveProperty from "@/components/shared/ImproveProperty/ImproveProperty";
 import TestimonialSection from "@/components/Testimonial/Testimonial";
 import { Metadata } from "next";
 
