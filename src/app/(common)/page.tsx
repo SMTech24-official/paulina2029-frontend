@@ -1,9 +1,17 @@
 import HappenBanner from "@/components/cards/HappenBanner/HappenBanner";
+import ContactPage from "@/components/ContactUs/ContactUs";
 import Banner from "@/components/pages/home/banner/Banner";
 import PortfolioSwiper from "@/components/pages/home/Our-Portfolio/Portfolio";
 import OurService from "@/components/pages/home/OurService/OurService";
 import TrustedByHundreds from "@/components/pages/home/TrustedByHundreds/TrustedByHundreds";
+<<<<<<< HEAD
+=======
+// import YourTrustedPartner from "@/components/pages/home/YourTrustedPartner/YourTrustedPartner";
+import BlogComponent from "@/components/shared/blog/BlogComponent";
+import ImproveProperty from "@/components/shared/ImproveProperty/ImproveProperty";
+>>>>>>> 480bdf73ff0a3c9fb9484dc0d6ae7b4b3ce8331a
 import TestimonialSection from "@/components/Testimonial/Testimonial";
+
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -20,9 +28,14 @@ const Home = () => {
       <Banner />
       <TrustedByHundreds />
       <OurService />
-      <HappenBanner />
-      <TestimonialSection />
+      <HappenBanner/>
+      <TestimonialSection/>
+      <BlogComponent  smallTitle="Blog" mainTitle="Insights & Inspiration: The LondonGutterClean Blog" />
+      <ImproveProperty/>
+
       <PortfolioSwiper />
+<ContactPage/>
+ 
     </>
   );
 };

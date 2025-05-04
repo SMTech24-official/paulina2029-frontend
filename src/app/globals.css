@@ -22,6 +22,33 @@ body {
 }
 
 
+.contact {
+  background-image: url("/assets/portfolio3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.footer {
+  background-image: url("/assets/Footer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+
+
+
 .playfair-font {
   font-family: "Playfair Display", serif;
 
