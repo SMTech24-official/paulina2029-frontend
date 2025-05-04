@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { FC } from "react";
-import { Mail, MapPin, Phone } from "lucide-react";
+
 import Logo from "@/assets/logo/logo.png";
 import Link from "next/link";
 import Apartment from "@/components/icons/Apartment";
