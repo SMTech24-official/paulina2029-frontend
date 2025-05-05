@@ -21,15 +21,15 @@ const LathPlaster = () => {
             Table of Contents
           </h2>
           <ul className="list-none text-[#231F20] font-bold space-y-3">
-            <li className="text-[#009245]">Introduction</li>
+            <li className="hover:text-[#009245] transition-colors duration-300">Introduction</li>
             <hr />
-            <li>A Superior Finish, Every Time</li>
+            <li className="hover:text-[#009245] transition-colors duration-300">A Superior Finish, Every Time</li>
             <hr />
-            <li>Identifying and Preventing Future Problems</li>
+            <li className="hover:text-[#009245] transition-colors duration-300">Identifying and Preventing Future Problems</li>
             <hr />
-            <li>Lath & Plaster: The Smart Choice</li>
+            <li className="hover:text-[#009245] transition-colors duration-300">Lath & Plaster: The Smart Choice</li>
             <hr />
-            <li>The Jimenez Plastering Advantage</li>
+            <li className="hover:text-[#009245] transition-colors duration-300">The Jimenez Plastering Advantage</li>
           </ul>
         </div>
         <SocialShare />

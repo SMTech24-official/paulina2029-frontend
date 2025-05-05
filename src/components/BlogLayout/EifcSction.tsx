@@ -18,18 +18,30 @@ const EifcSction = () => {
         />
         <div className="bg-[#01193605] py-4 px-4 mb-2 rounded-md shadow-md">
           <h2 className="text-lg font-semibold mb-3 font-poppins">
+            {" "}
+            className="hover:text-[#009245] transition-colors duration-300"
             Table of Contents
           </h2>
           <ul className="list-none text-[#231F20] font-bold space-y-3">
-            <li className="text-[#009245]">Introduction</li>
+            <li className="hover:text-[#009245] transition-colors duration-300">
+              Introduction
+            </li>
             <hr />
-            <li>Siding: A Strong, Protective Finish</li>
+            <li className="hover:text-[#009245] transition-colors duration-300">
+              Siding: A Strong, Protective Finish
+            </li>
             <hr />
-            <li>Identifying and Preventing Future Problems</li>
+            <li className="hover:text-[#009245] transition-colors duration-300">
+              Identifying and Preventing Future Problems
+            </li>
             <hr />
-            <li>Siding: The Smart Choice for Your Property</li>
+            <li className="hover:text-[#009245] transition-colors duration-300">
+              Siding: The Smart Choice for Your Property
+            </li>
             <hr />
-            <li>The Jimenez Plastering Advantage</li>
+            <li className="hover:text-[#009245] transition-colors duration-300">
+              The Jimenez Plastering Advantage
+            </li>
           </ul>
         </div>
         <SocialShare />
@@ -132,8 +144,8 @@ const EifcSction = () => {
             use top-grade materials, proven techniques, and an eye for detail to
             ensure your exterior is not only beautiful but also protected for
             years to come. <br />
-            We take pride in creating work that&#39;s as solid as it is striking —
-            work you&#39;ll be proud to show off.
+            We take pride in creating work that&#39;s as solid as it is striking
+            — work you&#39;ll be proud to show off.
           </p>
         </div>
       </div>

@@ -21,15 +21,15 @@ const Siding = () => {
             Table of Contents
           </h2>
           <ul className="list-none text-[#231F20] font-bold space-y-3">
-            <li className="text-[#009245]">Introduction</li>
+            <li className="hover:text-[#009245] transition-colors duration-300">Introduction</li>
             <hr />
-            <li>Siding: A Strong, Protective Finish</li>
+            <li className="hover:text-[#009245] transition-colors duration-300">Siding: A Strong, Protective Finish</li>
             <hr />
-            <li>Identifying and Preventing Future Problems</li>
+            <li className="hover:text-[#009245] transition-colors duration-300">Identifying and Preventing Future Problems</li>
             <hr />
-            <li>Siding: The Smart Choice for Your Property</li>
+            <li className="hover:text-[#009245] transition-colors duration-300">Siding: The Smart Choice for Your Property</li>
             <hr />
-            <li>The Jimenez Plastering Advantage</li>
+            <li className="hover:text-[#009245] transition-colors duration-300">The Jimenez Plastering Advantage</li>
           </ul>
         </div>
         <SocialShare />
