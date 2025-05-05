@@ -39,13 +39,13 @@ const Siding = () => {
       <div className="w-full md:w-[60%] flex flex-col gap-10 mt-6 md:mt-0">
         <div>
           <h2 className="text-[28px] md:text-[36px] font-bold mb-4 font-playfair leading-snug">
-            Siding: Durable Protection for Your Home's Exterior
+            Siding: Durable Protection for Your Home&apos;s Exterior
           </h2>
           <p className="text-[#496187] leading-relaxed font-poppins font-[500] text-[16px]">
             Jimenez Plastering Inc. provides expert siding services across
-            Wisconsin and Northern Illinois. Whether you're building new,
+            Wisconsin and Northern Illinois. Whether you&apos;re building new,
             remodeling, or upgrading your home, our team delivers durable,
-            weather-resistant protection for your building's exterior.
+            weather-resistant protection for your building&apos;s exterior.
           </p>
         </div>
 
@@ -129,8 +129,8 @@ const Siding = () => {
             use top-grade materials, proven techniques, and an eye for detail to
             ensure your exterior is not only beautiful but also protected for
             years to come. <br />
-            We take pride in creating work that's as solid as it is striking —
-            work you'll be proud to show off.
+            We take pride in creating work that&apos;s as solid as it is striking &mdash;
+            work you&apos;ll be proud to show off.
           </p>
         </div>
       </div>

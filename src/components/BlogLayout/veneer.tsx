@@ -64,7 +64,7 @@ const veneer = () => {
               Identifying and Preventing Future Problems
             </h3>
             <p className="text-[#496187] text-[16px]">
-              A proper lath and plaster system doesn't just look great — it
+              A proper lath and plaster system doesn&#39;t just look great — it
               protects your home. When we work on your property, we also inspect
               for early signs of issues like:
             </p>
@@ -131,8 +131,7 @@ const veneer = () => {
             team is committed to providing the highest quality service, ensuring
             your home or business is protected with both elegance and strength.{" "}
             <br />
-            We take pride in creating work that's as solid as it is striking —
-            work you'll be proud to show off.
+            We take pride in creating work that&#39;s as solid as it is striking — work you&#39;ll be proud to show off.
           </p>
         </div>
       </div>
