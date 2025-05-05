@@ -24,7 +24,6 @@ const Banner = () => {
   const BannerSlide = () => (
     <div
       className={`pt-10 md:pt-20 pb-20 md:pb-[250px] bg-cover h-full bg-center relative before:content-[''] before:absolute before:inset-0 before:z-[1]`}
-
       style={{ backgroundImage: `url(${bannerImage.src})` }}
     >
       <div className="container relative z-10 text-white px-4 sm:px-6 lg:px-8">

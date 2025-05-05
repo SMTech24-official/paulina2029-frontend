@@ -1,4 +1,3 @@
-
 import HappenBanner from "@/components/cards/HappenBanner/cards/HappendBaner";
 import ContactPage from "@/components/ContactUs/ContactUs";
 import Banner from "@/components/pages/home/banner/Banner";
@@ -11,10 +10,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "",
-  description:
-    "",
-  keywords:
-    "",
+  description: "",
+  keywords: "",
 };
 
 const Home = () => {
@@ -23,12 +20,10 @@ const Home = () => {
       <Banner />
       <TrustedByHundreds />
       <OurService />
-      <HappenBanner/>
-      <TestimonialSection/>
-   
+      <HappenBanner />
+      <TestimonialSection />
       <PortfolioSwiper />
-<ContactPage/>
- 
+      <ContactPage />
     </>
   );
 };

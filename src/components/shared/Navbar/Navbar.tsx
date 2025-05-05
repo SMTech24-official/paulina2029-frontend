@@ -8,7 +8,7 @@ import Logo from "@/assets/logo/logo.png";
 export default function Navbar() {
   return (
     <header className="w-full py-4 border-b border-gray-100 bg-white sticky top-0 z-50">
-      <div className="container mx-auto px-4 flex items-center justify-between">
+      <div className="container mx-auto px-2 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <div className="relative w-10 h-10">
@@ -55,34 +55,34 @@ export default function Navbar() {
               Services{" "}
               <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
             </button>
-            <div className="absolute p-4">
-              <div className="absolute top-0 hidden group-hover:block  bg-white shadow-lg rounded-md mt-2 min-w-[200px] border border-gray-100 z-10">
-                <div className="py-1">
-                  <Link
-                    href="/services-lath-&-plaster"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600"
-                  >
-                 Lath & Plaster
-                  </Link>
-                  <Link
-                    href="/services-siding"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600"
-                  >
+
+            {/* Dropdown */}
+            <div className="absolute top-full left-0 mt-1 hidden group-hover:block bg-white shadow-lg rounded-md min-w-[200px] border border-gray-100 z-10">
+              <div className="py-1">
+                <Link
+                  href="/services-lath-&-plaster"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600"
+                >
+                  Lath & Plaster
+                </Link>
+                <Link
+                  href="/services-siding"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600"
+                >
                   Siding
-                  </Link>
-                  <Link
-                    href="/services-efis"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600"
-                  >
-               EFIS
-                  </Link>
-                  <Link
-                    href="/services-veneer"
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600"
-                  >
-            Veneer
-                  </Link>
-                </div>
+                </Link>
+                <Link
+                  href="/services-efis"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600"
+                >
+                  EFIS
+                </Link>
+                <Link
+                  href="/services-veneer"
+                  className="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-green-600"
+                >
+                  Veneer
+                </Link>
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function Navbar() {
             </a>
           </div>
           <Link
-            href="/contact"
+            href="/contact-us"
             className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors font-medium"
           >
             Contact Us
