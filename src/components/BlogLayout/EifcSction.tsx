@@ -18,8 +18,6 @@ const EifcSction = () => {
         />
         <div className="bg-[#01193605] py-4 px-4 mb-2 rounded-md shadow-md">
           <h2 className="text-lg font-semibold mb-3 font-poppins">
-            {" "}
-            className="hover:text-[#009245] transition-colors duration-300"
             Table of Contents
           </h2>
           <ul className="list-none text-[#231F20] font-bold space-y-3">
@@ -51,19 +49,19 @@ const EifcSction = () => {
       <div className="w-full md:w-[60%] flex flex-col gap-10 mt-6 md:mt-0">
         <div>
           <h2 className="text-[28px] md:text-[36px] font-bold mb-4 font-playfair leading-snug">
-            Siding: Durable Protection for Your Home&#39;s Exterior
+            Siding: Durable Protection for Your Home&apos;s Exterior
           </h2>
           <p className="text-[#496187] leading-relaxed font-poppins font-[500] text-[16px]">
             Jimenez Plastering Inc. provides expert siding services across
-            Wisconsin and Northern Illinois. Whether you&#39;re building new,
+            Wisconsin and Northern Illinois. Whether you&apos;re building new,
             remodeling, or upgrading your home, our team delivers durable,
-            weather-resistant protection for your building&#39;s exterior.
+            weather-resistant protection for your building&apos;s exterior.
           </p>
         </div>
 
         <div>
           <h2 className="text-2xl font-semibold mb-3 font-poppins">
-            Siding: A Strong, Protective Finish{" "}
+            Siding: A Strong, Protective Finish
           </h2>
           <p className="text-[#496187] leading-relaxed font-poppins font-[500] text-[16px]">
             Siding is the protective material applied to the outer walls of your
@@ -144,8 +142,8 @@ const EifcSction = () => {
             use top-grade materials, proven techniques, and an eye for detail to
             ensure your exterior is not only beautiful but also protected for
             years to come. <br />
-            We take pride in creating work that&#39;s as solid as it is striking
-            — work you&#39;ll be proud to show off.
+            We take pride in creating work that&apos;s as solid as it is striking
+            — work you&apos;ll be proud to show off.
           </p>
         </div>
       </div>

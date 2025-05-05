@@ -15,31 +15,29 @@ const Footer: FC = () => {
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about-us" },
     { name: "Portfolios", path: "/portfolios" },
-    { name: "Services", path: "/services" },
+    { name: "Services", path: "#" },
     { name: "Contact Us", path: "/contact" },
     { name: "Give a Review", path: "/reviews" },
   ];
 
-  // Service links data
+  // Service links data - Updated with all 4 sub-services
   const serviceLinks = [
     { name: "Lath & Plaster", path: "/services-lath-&-plaster" },
-    { name: "EFIS", path: "/services-efis" },
-    { name: "Veneer", path: "/services-veneer" },
-    { name: "Siding", path: "/services-siding" },
+    {
+      name: "EFIS (Exterior Insulation Finishing System)",
+      path: "/services-efis",
+    },
+    { name: "Veneer Plastering", path: "/services-veneer" },
+    { name: "Siding Installation", path: "/services-siding" },
   ];
 
   return (
-    <footer className="footer text-white py-8 sm:py-12">
-      <div className="absolute bottom-0 left-0 w-60 h-60 sm:w-100 sm:h-100 md:w-120 md:h-120 opacity-100">
-       
-      </div>
-      <div className="absolute bottom-0 right-0 w-60 h-60 sm:w-100 sm:h-100 md:w-120 md:h-120 opacity-30">
-    
-      </div>
+    <footer className="footer text-white py-8 sm:py-12 bg-gray-900 relative">
+      {/* Background elements (removed empty divs) */}
+
       <div className="container mx-auto px-4 sm:px-6">
-        
         <div className="flex flex-col md:flex-row gap-8 lg:gap-12 xl:gap-16 text-sm text-gray-200">
-       
+          {/* Company Info Column */}
           <div className="w-full md:w-1/3 flex flex-col items-start text-left space-y-3">
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3">
               <Image
@@ -49,9 +47,9 @@ const Footer: FC = () => {
                 height={68}
                 className="w-12 sm:w-14 md:w-16"
               />
-                <h2 className="inline text-xl sm:text-2xl text-white playfair-font font-bold">
+              <h2 className="inline text-xl sm:text-2xl text-white playfair-font font-bold">
                 Jimenez Plastering Inc.
-                </h2>
+              </h2>
             </div>
             <p className="text-[#97A4BA] font-poppins text-sm sm:text-base font-normal">
               We&apos;ll ensure your gutters function flawlessly and enhance the
@@ -59,7 +57,7 @@ const Footer: FC = () => {
             </p>
           </div>
 
-      
+          {/* Navigation and Services Columns */}
           <div className="w-full md:w-1/3">
             <div className="flex flex-col md:flex-row items-start justify-start gap-4 sm:gap-6 text-left">
               {/* Navigation Links */}
@@ -81,7 +79,7 @@ const Footer: FC = () => {
                 </ul>
               </div>
 
-              {/* Services Links */}
+              {/* Services Links - Updated with all 4 sub-services */}
               <div className="w-full md:w-1/2 space-y-1 sm:space-y-2">
                 <h3 className="font-semibold text-white text-base sm:text-lg font-poppins">
                   Services
@@ -91,7 +89,7 @@ const Footer: FC = () => {
                     <li key={idx}>
                       <Link
                         href={service.path}
-                        className="hover:text-white poppins-font text-[#97A4BA]  text-sm sm:text-base"
+                        className="hover:text-white poppins-font text-[#97A4BA] text-sm sm:text-base"
                       >
                         {service.name}
                       </Link>
@@ -102,13 +100,13 @@ const Footer: FC = () => {
             </div>
           </div>
 
-          {/* Column 3: Contact Info - Changed to items-start for all screens */}
+          {/* Contact Info Column */}
           <div className="w-full md:w-1/3 space-y-3 sm:space-y-4 flex flex-col items-start text-left">
             <h3 className="font-semibold text-white text-base sm:text-lg xl:text-xl font-poppins">
               Get In Touch With us Today
             </h3>
             <div className="flex items-start gap-2 sm:gap-3">
-            <Apartment/>
+              <Apartment />
               <p className="text-[#97A4BA] text-sm sm:text-base font-poppins">
                 275 Justin Drive
                 <br />
@@ -116,7 +114,7 @@ const Footer: FC = () => {
               </p>
             </div>
             <div className="flex items-center gap-2 sm:gap-3">
-             <Call2/>
+              <Call2 />
               <a
                 href="tel:9286349065"
                 className="text-[#97A4BA] text-sm sm:text-base hover:text-white font-poppins"
@@ -125,10 +123,10 @@ const Footer: FC = () => {
               </a>
             </div>
             <div className="flex items-center gap-2 sm:gap-3">
-              <Email2/>
+              <Email2 />
               <a
                 href="mailto:Jimenezplastering@gmail.com"
-                className=" text-[#97A4BA] text-sm sm:text-base break-all hover:text-white font-poppins"
+                className="text-[#97A4BA] text-sm sm:text-base break-all hover:text-white font-poppins"
               >
                 Jimenezplastering@gmail.com
               </a>
