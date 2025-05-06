@@ -90,7 +90,7 @@ export default function TestimonialSection() {
                 We&apos;re the Plastering Experts in Northern Arizona You Can
                 Trust
               </h2>
-              <p className="text-blue-700 mt-4 sm:mt-5 max-w-3xl text-sm sm:text-base font-poppins">
+              <p className="text-blue-700 mt-4 sm:mt-5 max-w-3xl text-sm sm:text-base font-poppins text-justify">
                 Jimenez Plastering, with over 30 years of experience, delivers
                 reliable, high-quality plastering services for residential and
                 commercial projects across Arizona.
@@ -104,7 +104,7 @@ export default function TestimonialSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-10 sm:mt-14">
           {realTestimonials.map((testimonial, index) => (
-            <div key={index} className="h-full">
+            <div key={index} className="h-full text-justify">
               <ReviewCard testimonial={testimonial} />
             </div>
           ))}

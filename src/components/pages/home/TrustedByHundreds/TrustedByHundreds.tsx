@@ -49,7 +49,7 @@ export default function AboutUsSection() {
                 The Jimenez Plastering Difference
               </h3>
             </div>
-            <p className="text-gray-600 text-sm sm:text-base">
+            <p className="text-gray-600 text-sm sm:text-base text-justify">
               At Jimenez Plastering, we bring over 30 years of experience,
               specializing in high-quality plastering and stucco services.
               Founded in 1998 by Antonio Jimenez, our team&apos;s attention to
@@ -58,7 +58,7 @@ export default function AboutUsSection() {
               projects, we pride ourselves on providing craftsmanship that
               lasts.
             </p>
-            <ul className="space-y-3 text-sm sm:text-base">
+            <ul className="space-y-3 text-sm sm:text-base text-justify">
               <li className="flex items-start gap-2">
                 <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#16A34A]" />
                 <span className="text-gray-700">

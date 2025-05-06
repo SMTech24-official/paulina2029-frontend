@@ -51,7 +51,7 @@ const Footer: FC = () => {
                 Jimenez Plastering Inc.
               </h2>
             </div>
-            <p className="text-[#97A4BA] font-poppins text-sm sm:text-base font-normal">
+            <p className="text-[#97A4BA] font-poppins text-sm sm:text-base font-normal text-justify">
               We&apos;ll ensure your gutters function flawlessly and enhance the
               overall look of your London home or business.
             </p>

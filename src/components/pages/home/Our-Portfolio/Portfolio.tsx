@@ -52,7 +52,7 @@ export default function CustomPortfolioSlider() {
             Delivering Excellence in Every Project
           </h2>
           <div className="flex flex-col md:flex-row items-start justify-between gap-4">
-            <p className="text-[#496187] max-w-2xl mb-6 md:text-base text-sm">
+            <p className="text-[#496187] max-w-2xl mb-6 md:text-base text-sm text-justify">
               With over 20 years of experience, Jimenez Plastering delivers
               high-quality, durable finishes for both luxury homes and
               large-scale commercial projects across Arizona.

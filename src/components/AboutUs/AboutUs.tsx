@@ -34,11 +34,11 @@ export default function AboutUs() {
             <div className="w-6 h-[1px] bg-emerald-600"></div>
             <p className="text-[#231F20] md:text-xl text-base font-semibold">History</p>
           </div>
-              <h2 className="text-3xl font-bold mb-6">
+              <h2 className="text-3xl font-bold mb-6 text-justify">
                 30+ Years of Expertise, Innovation, and Family Tradition in the
                 Plastering Industry
               </h2>
-              <div className="space-y-4 text-gray-600">
+              <div className="space-y-4 text-gray-600 text-justify">
                 <p>
                   Gonzalo Jimenez, President, has over 30 years of experience in
                   the industry, with a family history of plasterers going back
@@ -76,11 +76,11 @@ export default function AboutUs() {
             <div className="w-6 h-[1px] bg-emerald-600"></div>
             <p className="text-[#231F20] md:text-xl text-base font-semibold">Our goal</p>
           </div>
-              <h2 className="text-3xl font-bold mb-6">
+              <h2 className="text-3xl font-bold mb-6 text-justify">
                 Delivering Exceptional, Custom-Plastered Exteriors with
                 Precision, Durability, and a Commitment to Client Satisfaction
               </h2>
-              <div className="space-y-4 text-gray-600">
+              <div className="space-y-4 text-gray-600 text-justify">
                 <p>
                   Our goal is to continue learning, improving and testing new
                   products so that we can provide a positive quality experience

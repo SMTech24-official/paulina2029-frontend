@@ -24,12 +24,12 @@ const ReviewCard = ({ testimonial }: { testimonial: Testimonial }) => {
       </div>
 
       {/* Quote */}
-      <p className="font-semibold text-base sm:text-lg mb-1 font-poppins">
+      <p className="font-semibold text-base sm:text-lg mb-1 font-poppins text-justify">
         {`"${testimonial.quote}"`}
       </p>
 
       {/* Text */}
-      <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm font-poppins">
+      <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm font-poppins text-justify">
         {testimonial.text}
       </p>
 

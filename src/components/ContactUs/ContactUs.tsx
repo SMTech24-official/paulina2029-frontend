@@ -16,7 +16,7 @@ export default function ContactPage() {
           {/* Left Column - Contact Information */}
           <div className="p-4 sm:p-6 md:p-12">
             <h1 className="text-3xl md:text-4xl font-bold text-black mb-4">CONTACT US</h1>
-            <p className="text-[#496187] mb-10 font-poppins text-sm md:text-base font-medium">
+            <p className="text-[#496187] mb-10 font-poppins text-sm md:text-base font-medium text-justify">
               We&apos;ll schedule a call to discuss your idea. After discovery sessions, we&apos;ll send a proposal, and upon
               approval, we&apos;ll get started.
             </p>

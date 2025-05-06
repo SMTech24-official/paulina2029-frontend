@@ -45,7 +45,7 @@ const ServicesSection: React.FC = () => {
           </h2>
 
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-            <p className="text-[#496187] text-sm sm:text-base font-poppins max-w-3xl">
+            <p className="text-[#496187] text-sm sm:text-base font-poppins max-w-3xl text-justify">
               From inspections to full roof replacements, we deliver quality workmanship backed by years of experience.
             </p>
             <Button className="whitespace-nowrap self-start md:self-auto">
@@ -67,10 +67,10 @@ const ServicesSection: React.FC = () => {
                 className="object-cover w-full h-full"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                <h3 className="text-white font-bold mb-1 playfair-font md:text-[32px] text-2xl">
+                <h3 className="text-white font-bold mb-1 playfair-font md:text-[32px] text-2xl text-justify">
                   {services[0].title}
                 </h3>
-                <p className="text-white text-sm md:text-base font-poppins font-medium">
+                <p className="text-white text-sm md:text-base font-poppins font-medium text-justify">
                   {services[0].description}
                 </p>
               </div>

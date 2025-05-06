@@ -60,7 +60,7 @@ export default function BeforeAfterSection() {
         </h2>
 
         {/* Description */}
-        <p className="text-stone-700 mb-10 max-w-2xl">
+        <p className="text-stone-700 mb-10 max-w-2xl text-justify">
           From repairs to full installations, Jammer Plastering Inc. provides expert lath and plaster services that
           enhance durability and aesthetics, ensuring long-lasting beauty for your home or business.
         </p>

@@ -63,7 +63,7 @@ const PortfolioCard = () => {
         <h1 className="text-3xl md:text-5xl font-bold mb-3 font-playfair text-[#231F20]">
           Delivering Excellence in Every <br /> Project
         </h1>
-        <p className="text-[#496187] max-w-3xl text-wrap">
+        <p className="text-[#496187] max-w-3xl text-wrap text-justify">
           Our team is known for excellence, strategic planning delivers
           high-quality, durable results. We take pride in our designs,
           materials, and craftsmanship for lasting beauty.

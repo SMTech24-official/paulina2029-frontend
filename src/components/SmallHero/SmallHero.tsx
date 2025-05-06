@@ -14,7 +14,7 @@ export default function HeroSection({ title, description, bgClass = '' }: HeroSe
           <h1 className="md:text-[68px] text-4xl font-poppins font-semibold text-white py-3 mb-2 sm:mb-4 md:mb-5">
             {title}
           </h1>
-          <p className="text-[#FFFFFF] font-poppins md:text-xl text-base font-normal max-w-4xl whitespace-normal mt-4">
+          <p className="text-[#FFFFFF] font-poppins md:text-xl text-base font-normal max-w-4xl whitespace-normal mt-4 text-justify">
             {description}
           </p>
         </div>
