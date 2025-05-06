@@ -13,6 +13,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Banner = () => {
   const [mounted, setMounted] = useState(false);
@@ -44,7 +45,10 @@ const Banner = () => {
         </p>
 
         <div className="flex   items-center sm:items-center gap-4 mt-4 md:mt-8 pb-10">
-          <Button>Contact Us</Button>
+          <Link href="/contact-us">
+            <Button>Contact Us</Button>
+          </Link>
+
           <button className="flex items-center gap-2 text-white font-semibold text-sm md:text-base py-3 px-6 rounded-[48px]">
             <Image src={playbtn} alt="Play Button" width={40} height={40} />
             See How It Works

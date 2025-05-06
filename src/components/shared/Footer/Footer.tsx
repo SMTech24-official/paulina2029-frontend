@@ -16,7 +16,7 @@ const Footer: FC = () => {
     { name: "About Us", path: "/about-us" },
     { name: "Portfolios", path: "/portfolios" },
     { name: "Services", path: "#" },
-    { name: "Contact Us", path: "/contact" },
+    { name: "Contact Us", path: "/contact-us" },
     { name: "Give a Review", path: "/reviews" },
   ];
 

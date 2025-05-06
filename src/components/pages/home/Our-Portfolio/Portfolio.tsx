@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function CustomPortfolioSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -19,8 +20,10 @@ export default function CustomPortfolioSlider() {
 
   // Calculate maxIndex based on the number of items and visible slides
   // Ensure we don't have a negative maxIndex if items <= visibleSlides
-  const maxIndex = Math.max(0, Math.ceil(portfolioItems.length / visibleSlides) - 1);
-
+  const maxIndex = Math.max(
+    0,
+    Math.ceil(portfolioItems.length / visibleSlides) - 1
+  );
 
   // const handleNext = () => {
   //   setActiveIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
@@ -30,9 +33,9 @@ export default function CustomPortfolioSlider() {
   //   setActiveIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
   // };
 
-   // Calculate the transform percentage dynamically based on visibleSlides
-   const slideTransformPercentage = 100 / (portfolioItems.length / visibleSlides);
-
+  // Calculate the transform percentage dynamically based on visibleSlides
+  const slideTransformPercentage =
+    100 / (portfolioItems.length / visibleSlides);
 
   return (
     <div className="portfolio">
@@ -41,20 +44,22 @@ export default function CustomPortfolioSlider() {
         <div className="mb-8">
           <div className="flex items-center gap-2 mb-2">
             <div className="w-6 h-[1px] bg-emerald-600"></div>
-            <p className="text-[#231F20] md:text-xl text-base font-semibold">Our Portfolio</p>
+            <p className="text-[#231F20] md:text-xl text-base font-semibold">
+              Our Portfolio
+            </p>
           </div>
           <h2 className="md:text-[40px] text-3xl playfair-font font-bold text-[#231F20] mb-4">
             Delivering Excellence in Every Project
           </h2>
           <div className="flex flex-col md:flex-row items-start justify-between gap-4">
-           <p className="text-[#496187] max-w-2xl mb-6 md:text-base text-sm">
-             With over 20 years of experience, Jimenez Plastering delivers
-             high-quality, durable finishes for both luxury homes and large-scale
-             commercial projects across Arizona.
-           </p>
-           <Button className="">
-             Explore Our Portfolio
-           </Button>
+            <p className="text-[#496187] max-w-2xl mb-6 md:text-base text-sm">
+              With over 20 years of experience, Jimenez Plastering delivers
+              high-quality, durable finishes for both luxury homes and
+              large-scale commercial projects across Arizona.
+            </p>
+            <Link href="/portfolios">
+              <Button className="">Explore Our Portfolio</Button>
+            </Link>
           </div>
         </div>
 
@@ -63,17 +68,19 @@ export default function CustomPortfolioSlider() {
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{
-                // Adjust width to account for padding/gap if necessary, or simplify
-                // Width should be enough to contain all items side-by-side
-                width: `${portfolioItems.length * (20 / visibleSlides)}%`,
-                transform: `translateX(-${activeIndex * slideTransformPercentage}%)`,
+              // Adjust width to account for padding/gap if necessary, or simplify
+              // Width should be enough to contain all items side-by-side
+              width: `${portfolioItems.length * (20 / visibleSlides)}%`,
+              transform: `translateX(-${
+                activeIndex * slideTransformPercentage
+              }%)`,
             }}
           >
             {portfolioItems.map((item, index) => (
               <div
                 key={index}
-                 // Adjust width to be a fraction of the container based on visibleSlides
-                 // Use flex-shrink-0 to prevent items from shrinking
+                // Adjust width to be a fraction of the container based on visibleSlides
+                // Use flex-shrink-0 to prevent items from shrinking
                 className={`w-full sm:w-1/${visibleSlides} lg:w-1/${visibleSlides} px-3 shrink-0`}
               >
                 {/* Card Container - Added relative positioning here */}
@@ -87,7 +94,9 @@ export default function CustomPortfolioSlider() {
                     className="w-full h-[500px] object-cover" // Ensure image covers the area
                   />
                   {/* Text Overlay - Positioned absolutely at the bottom */}
-                  <div className="absolute bottom-3 left-0 right-0 p-4 m-2 text-white text-center backdrop-blur-sm bg-black/30 rounded-lg"> {/* Added backdrop-blur and adjusted background color/opacity */}
+                  <div className="absolute bottom-3 left-0 right-0 p-4 m-2 text-white text-center backdrop-blur-sm bg-black/30 rounded-lg">
+                    {" "}
+                    {/* Added backdrop-blur and adjusted background color/opacity */}
                     <h3 className="font-semibold text-xl">{item.title}</h3>
                   </div>
                 </div>
@@ -95,8 +104,7 @@ export default function CustomPortfolioSlider() {
             ))}
           </div>
 
-
-{/*         
+          {/*         
           <button
             onClick={handlePrev}
             className="absolute left-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100 z-10"
@@ -112,7 +120,6 @@ export default function CustomPortfolioSlider() {
             &#9654; 
           </button> */}
 
-
           {/* Dots */}
           {/* Only show dots if there's more than one slide group */}
           {maxIndex > 0 && (
@@ -123,7 +130,9 @@ export default function CustomPortfolioSlider() {
                   onClick={() => setActiveIndex(index)}
                   className={`w-6 h-6 rounded-full transition-all ${
                     // Modified class for active dot to be an outline
-                    activeIndex === index ? "border-[6px] border-emerald-600 bg-transparent" : "bg-gray-300"
+                    activeIndex === index
+                      ? "border-[6px] border-emerald-600 bg-transparent"
+                      : "bg-gray-300"
                   }`}
                   aria-label={`Go to slide group ${index + 1}`}
                 />
