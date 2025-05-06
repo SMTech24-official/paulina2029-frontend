@@ -86,11 +86,11 @@ export default function TestimonialSection() {
 
           <div className="flex flex-col md:flex-row justify-between items-start gap-6">
             <div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-playfair text-gray-900 max-w-2xl leading-tight sm:leading-snug md:leading-[120%]">
+              <h2 className="text-4xl sm:text-3xl md:text-4xl font-bold font-playfair text-gray-900 max-w-2xl leading-tight sm:leading-snug md:leading-[120%]">
                 We&apos;re the Plastering Experts in Northern Arizona You Can
                 Trust
               </h2>
-              <p className="text-blue-700 mt-4 sm:mt-5 max-w-3xl text-sm sm:text-base font-poppins text-justify">
+              <p className="text-[#496187] mt-4 sm:mt-5 max-w-3xl text-xl sm:text-base font-poppins text-justify">
                 Jimenez Plastering, with over 30 years of experience, delivers
                 reliable, high-quality plastering services for residential and
                 commercial projects across Arizona.

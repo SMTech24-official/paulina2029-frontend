@@ -85,12 +85,12 @@ const PortfolioCard = () => {
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
               />
               {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
 
               {/* Bottom-Centered Glass Title */}
-              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2">
+              <div className="absolute w-[95%] bottom-4 left-1/2 transform -translate-x-1/2">
                 <div className="px-0 py-2 rounded-md backdrop-blur-sm bg-white/10 border border-white/20 text-white text-center">
-                  <h3 className="font-sm text-lg px-10 py-2">{item.title}</h3>
+                  <h3 className="font-bold text-xl px-10 py-2 font-playfair">{item.title}</h3>
                 </div>
               </div>
             </div>
