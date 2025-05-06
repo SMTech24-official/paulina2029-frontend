@@ -90,7 +90,7 @@ export default function Navbar() {
 
         {/* Contact Information */}
         <div className="flex items-center gap-4">
-          <div className="hidden md:block">
+          <div className="hidden md:block max-xl:hidden">
             <span className="text-gray-700">Call Us: </span>
             <a
               href="tel:928-634-9065"
@@ -101,7 +101,7 @@ export default function Navbar() {
           </div>
           <Link
             href="/contact-us"
-            className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md transition-colors font-medium"
+            className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 md:px-4 md:py-2 sm:px-3 sm:py-1.5 text-sm sm:text-base rounded-md transition-colors font-medium"
           >
             Contact Us
           </Link>

@@ -20,7 +20,7 @@ export default function AboutUsSection() {
 
             {/* Overlay Card - Responsive positioning only */}
             <div
-              className="absolute bottom-4 sm:bottom-8 md:bottom-12 lg:bottom-16 xl:bottom-20 -right-2 sm:-right-3 md:-right-4 bg-white bg-opacity-100 p-4 rounded-lg shadow-lg text-center z-10"
+              className="absolute bottom-4 sm:bottom-8 md:bottom-12 lg:bottom-16 xl:bottom-20 -right-2 sm:right-4 md:right-6 lg:-right-8 xl:-right-10 bg-white bg-opacity-100 p-4 sm:p-5 md:p-6 rounded-lg shadow-lg text-center z-10 w-[140px] sm:w-[160px] md:w-[180px] lg:w-[200px]"
               style={{
                 backgroundImage: "url('/images/minicard.jpg')",
                 backgroundSize: "cover",
@@ -28,10 +28,10 @@ export default function AboutUsSection() {
                 opacity: "100%",
               }}
             >
-              <p className="text-sm text-[#496187] font-bold font-playfair">
+              <p className="text-xs sm:text-sm text-[#496187] font-bold font-playfair">
                 Established in
               </p>
-              <p className="text-4xl md:text-5xl lg:text-6xl font-bold text-black font-poppins">
+              <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black font-poppins">
                 1998
               </p>
             </div>
@@ -45,11 +45,11 @@ export default function AboutUsSection() {
                   About Us
                 </p>
               </div>
-              <h3 className="mt-1 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
+              <h3 className="mt-1 text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-gray-900">
                 The Jimenez Plastering Difference
               </h3>
             </div>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-sm sm:text-base">
               At Jimenez Plastering, we bring over 30 years of experience,
               specializing in high-quality plastering and stucco services.
               Founded in 1998 by Antonio Jimenez, our team&apos;s attention to
@@ -58,7 +58,7 @@ export default function AboutUsSection() {
               projects, we pride ourselves on providing craftsmanship that
               lasts.
             </p>
-            <ul className="space-y-3">
+            <ul className="space-y-3 text-sm sm:text-base">
               <li className="flex items-start gap-2">
                 <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-[#16A34A]" />
                 <span className="text-gray-700">
@@ -92,10 +92,13 @@ export default function AboutUsSection() {
               </li>
             </ul>
             <div className="flex flex-col gap-3 sm:flex-row">
-              <Button>
+              <Button className="w-full sm:w-auto text-sm sm:text-base px-4 py-2">
                 <Link href="/contact-us">Contact Us</Link>
               </Button>
-              <Button variant="outline">
+              <Button
+                variant="outline"
+                className="w-full sm:w-auto text-sm sm:text-base px-4 py-2"
+              >
                 <Link href="#contact">Learn More</Link>
               </Button>
             </div>
