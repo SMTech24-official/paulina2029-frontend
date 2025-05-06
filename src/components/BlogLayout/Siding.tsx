@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import LeftImg from "@/assets/service-img/left4.jpg";
+import LeftImg from "@/assets/service-img/image.png";
 import RightImg from "@/assets/service-img/right4.jpg";
 import SocialShare from "./SocialShare";
 
@@ -13,8 +13,8 @@ const Siding = () => {
           src={LeftImg}
           alt="Img"
           width={500}
-          height={500}
-          className="rounded-md border border-green-600 object-contain"
+          height={1000}
+          className="rounded-md object-fill h-full"
         />
         <div className="bg-[#01193605] py-4 px-4 mb-2 rounded-md shadow-md">
           <h2 className="text-lg font-semibold mb-3 font-poppins">
