@@ -46,7 +46,7 @@ const EifcSction = () => {
       </div>
 
       {/* Right Side */}
-      <div className="w-full md:w-[60%] flex flex-col gap-10 mt-6 md:mt-0">
+      <div className="w-full md:w-[60%] flex flex-col gap-10 mt-6 md:mt-0 text-justify">
         <div>
           <h2 className="text-[28px] md:text-[36px] font-bold mb-4 font-playfair leading-snug">
             Siding: Durable Protection for Your Home&apos;s Exterior

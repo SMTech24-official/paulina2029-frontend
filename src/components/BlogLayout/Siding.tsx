@@ -41,7 +41,7 @@ const Siding = () => {
           <h2 className="text-[28px] md:text-[36px] font-bold mb-4 font-playfair leading-snug">
             Siding: Durable Protection for Your Home&apos;s Exterior
           </h2>
-          <p className="text-[#496187] leading-relaxed font-poppins font-[500] text-[16px]">
+          <p className="text-[#496187] leading-relaxed font-poppins font-[500] text-[16px] text-justify">
             Jimenez Plastering Inc. provides expert siding services across
             Wisconsin and Northern Illinois. Whether you&apos;re building new,
             remodeling, or upgrading your home, our team delivers durable,
@@ -53,7 +53,7 @@ const Siding = () => {
           <h2 className="text-2xl font-semibold mb-3 font-poppins">
             Siding: A Strong, Protective Finish{" "}
           </h2>
-          <p className="text-[#496187] leading-relaxed font-poppins font-[500] text-[16px]">
+          <p className="text-[#496187] leading-relaxed font-poppins font-[500] text-[16px] text-justify">
             Siding is the protective material applied to the outer walls of your
             home, designed to shield against the elements while enhancing its
             appearance. Our team ensures seamless application, offering a
@@ -61,11 +61,11 @@ const Siding = () => {
             protection.
           </p>
 
-          <div className="mt-6 space-y-4 font-poppins">
+          <div className="mt-6 space-y-4 font-poppins text-justify">
             <h3 className="text-2xl font-bold mb-2">
               Identifying and Preventing Future Problems
             </h3>
-            <p className="text-[#496187] text-[16px]">
+            <p className="text-[#496187] text-[16px] text-justify">
               We ensure that your siding not only looks great but also functions
               as a barrier against the elements. During installation, we inspect
               for potential issues such as:
@@ -89,7 +89,7 @@ const Siding = () => {
           </div>
         </div>
 
-        <div>
+        <div className="text-justify">
           <h1 className="text-xl font-bold mb-2">
             Siding: The Smart Choice for Your Property
           </h1>

@@ -90,7 +90,7 @@ export default function Navbar() {
 
         {/* Contact Information */}
         <div className="flex items-center gap-4">
-          <div className="hidden md:block max-xl:hidden">
+          <div className="hidden md:block [@media(max-width:1024px)]:hidden">
             <span className="text-gray-700">Call Us: </span>
             <a
               href="tel:928-634-9065"
