@@ -104,7 +104,7 @@ export default function TestimonialSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-10 sm:mt-14">
           {realTestimonials.map((testimonial, index) => (
-            <div key={index} className="h-full text-justify">
+            <div key={index} className="h-full">
               <ReviewCard testimonial={testimonial} />
             </div>
           ))}

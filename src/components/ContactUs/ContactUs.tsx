@@ -79,7 +79,7 @@ export default function ContactPage() {
           </div>
 
           {/* Right Column - Contact Form */}
-          <div className="bg-white p-4 sm:p-6 md:p-12">
+          <div className="bg-white p-4 sm:p-6 md:p-12 rounded-xl">
             <h2 className="text-3xl md:text-4xl font-bold text-[#231F20] mb-8">Get in touch</h2>
             <form className="space-y-6 font-poppins">
               {/* Name */}
