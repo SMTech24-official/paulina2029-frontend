@@ -7,7 +7,7 @@ import Facebook1 from "../icons/Facebook";
 import Instragram from "../icons/Instragram";
 import X from "../icons/X";
 import Linkdin1 from "../icons/Linkdin";
-import { MapComponent } from "../MapComponent/MapComponent";
+
 
 export default function ContactPage() {
   return (
@@ -193,7 +193,7 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-      <MapComponent/>
+ 
     </div>
   );
 }
