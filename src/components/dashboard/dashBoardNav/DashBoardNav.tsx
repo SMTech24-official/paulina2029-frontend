@@ -1,18 +1,20 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @next/next/no-img-element */
 "use client"
 
-import React, { useRef, useEffect, useState } from 'react'
+import { cn } from "@/lib/utils"
+import { Home, LayoutDashboard, LogOut, Menu, Star, Users, X } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { LayoutDashboard, Users, Star, Home, Menu, X, LogOut } from 'lucide-react'
-import { cn } from "@/lib/utils"
+import { useEffect, useRef, useState } from 'react'
 
-import { ScrollArea } from "@/components/ui/scroll-area"
 import { poppins } from '@/app/fonts/font'
+import { ScrollArea } from "@/components/ui/scroll-area"
 
 import Logo from '@/components/shared/logo/Logo'
-
-import { signOut, useSession } from "next-auth/react";
+import { logout } from '@/redux/features/user/userSlice'
+import { useDispatch, useSelector } from 'react-redux'
+import { toast } from 'sonner'
 const adminNavItems = [
     { name: 'Dashboard', href: '/admin/dashboard', icon: LayoutDashboard },
     { name: 'Feedbacks', href: '/admin/dashboard/feedback', icon: Star },
@@ -22,9 +24,8 @@ const adminNavItems = [
 
 export default function DashboardNav() {
 
-    const { data: session, status } = useSession();
-
-
+    const dispatch = useDispatch();
+    const user = useSelector((state: any) => state.user.user);
     const [isOpen, setIsOpen] = useState(false)
     const [activeNav, setActiveNav] = useState('')
     const navRef = useRef<HTMLDivElement>(null)
@@ -46,11 +47,10 @@ export default function DashboardNav() {
         }
     }, [navRef])
 
-
-    if (status === 'loading') return <p>Loading...</p>;
-    // console.log(session?.user);
-    if (!session) return <p>You must be signed in</p>;
-
+    const handleLogout = () => {
+        dispatch(logout());
+        toast.success("Logout Successful")
+    };
     return (
         <div ref={navRef} className="relative z-40 h-full">
             <button
@@ -95,11 +95,11 @@ export default function DashboardNav() {
                         <div className='flex items-center space-x-4 p-2'>
                             <div className=''>
                                 <img src="/placeholder-avatar.jpg" alt="User" />
-                                <p className='bg-slate-200'>{session?.user?.name?.slice(0, 2)}</p>
+                                <p className='bg-slate-200'>{user?.name?.slice(0, 2)}</p>
                             </div>
                             <div>
-                                <p className='font-medium'>{session?.user?.name}</p>
-                                <p className='text-xs text-gray-500 my-1'>{session?.user?.email}</p>
+                                <p className='font-medium'>{user?.name}</p>
+                                <p className='text-xs text-gray-500 my-1'>{user?.email}</p>
                                 <div className='flex items-center space-x-1'>
                                     <span className='w-2 h-2 bg-green-500 rounded-full'></span>
                                     <p className='text-xs text-gray-500'>Active</p>
@@ -107,7 +107,7 @@ export default function DashboardNav() {
                             </div>
                         </div>
                         <div className="flex items-center justify-center">
-                            {session?.user && <button onClick={() => signOut()} className='w-full flex items-center border px-5 rounded-xl py-2 mt-4 bg-red-500 text-white'>
+                            {user && <button onClick={() => handleLogout()} className='w-full flex items-center border px-5 rounded-xl py-2 mt-4 bg-red-500 text-white'>
                                 <LogOut className='w-4 h-4 mr-2' />
                                 Logout
                             </button>

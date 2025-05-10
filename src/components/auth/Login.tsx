@@ -1,32 +1,48 @@
 "use client"
 
-import { useState } from "react"
+import LogInImage from "@/assets/4.png"
 import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import { useAdminLoginMutation } from "@/redux/api/auth"
 import { LockIcon, UserIcon } from "lucide-react"
 import Image from "next/image"
-import LogInImage from "@/assets/4.png"
 import Link from "next/link"
-import { signIn } from "next-auth/react"
 import { useRouter } from "next/navigation"
+import { useState } from "react"
 import { toast } from "sonner"
-
+import Cookies from "js-cookie";
+import { useDispatch } from "react-redux"
+import { setUser } from "@/redux/features/user/userSlice"
 
 export default function AdminLogin() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const router = useRouter()
+    const [signIn] = useAdminLoginMutation()
+    const dispatch = useDispatch();
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault()
-        const result = await signIn("credentials", {
+        const data = {
             email: email,
             password: password,
-            redirect: false,
-        });
-        if (result && result.ok) {
-            router.push("/admin/dashboard"); // Use router for navigation
+        }
+
+        const response = await signIn(data);
+        console.log(response);
+        if (response && response.data) {
+            Cookies.set("token", response.data.token);
+            dispatch(
+                setUser({
+                    user: {
+                        id: response.data.data._id,
+                        name: response.data.data.name,
+                        email: response.data.data.email,
+                    },
+                    token: response.data.token,
+                }))
+            router.push("/admin/dashboard");
             toast.success('WellCome Admin')
         } else {
             toast.error("Wrong Credential")

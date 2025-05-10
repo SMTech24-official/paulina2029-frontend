@@ -26,7 +26,7 @@ export async function connectDB() {
     await client.connect();
 
     // Access the specific database
-    db = client.db("ExplainMeds");
+    db = client.db("Paulina");
 
     return db;
   } catch (error) {
