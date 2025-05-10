@@ -51,16 +51,16 @@ const PortfolioCard = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
+    <div className="max-w-6xl mx-auto px-4 md:py-12 py-4">
       {/* Section Header */}
-      <div className="mb-8 mt-10">
+      <div className="md:mb-8 mb-4 md:mt-10 mt-6">
         <div className="flex items-center gap-2 mb-2">
           <div className="w-6 h-[1px] bg-[#231F20]"></div>
           <p className="text-[#231F20] md:text-xl text-base font-semibold">
             Our Portfolio
           </p>
         </div>
-        <h1 className="text-3xl md:text-5xl font-bold mb-3 font-playfair text-[#231F20]">
+        <h1 className="text-2xl md:text-5xl font-bold mb-3 font-playfair text-[#231F20]">
           Delivering Excellence in Every <br /> Project
         </h1>
         <p className="text-[#496187] max-w-3xl text-wrap text-justify">

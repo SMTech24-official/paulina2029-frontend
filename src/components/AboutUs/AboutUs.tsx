@@ -17,9 +17,9 @@ export default function AboutUs() {
       bgClass="about" 
     />
   
-      <section className="py-16 bg-gray-50">
+      <section className="md:py-16 py-8 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-2 md:gap-8 gap-6 items-center">
             <div className="order-2 md:order-1">
               <Image
                 src={HistoryImg}
@@ -34,7 +34,7 @@ export default function AboutUs() {
             <div className="w-6 h-[1px] bg-emerald-600"></div>
             <p className="text-[#231F20] md:text-xl text-base font-semibold">History</p>
           </div>
-              <h2 className="text-3xl font-bold mb-6 text-justify">
+              <h2 className="md:text-3xl text-2xl font-bold md:mb-6 mb-4 text-justify">
                 30+ Years of Expertise, Innovation, and Family Tradition in the
                 Plastering Industry
               </h2>
@@ -68,19 +68,19 @@ export default function AboutUs() {
       </section>
 
       {/* Our Goal Section */}
-      <section className="py-16">
+      <section className="md:py-16 py-2">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="grid md:grid-cols-2 md:gap-8 gap-6 items-center">
             <div>
             <div className="flex items-center gap-2 mb-2">
             <div className="w-6 h-[1px] bg-emerald-600"></div>
             <p className="text-[#231F20] md:text-xl text-base font-semibold">Our goal</p>
           </div>
-              <h2 className="text-3xl font-bold mb-6 text-justify">
+              <h2 className="md:text-3xl text-2xl font-bold md:mb-6 mb-4 text-justify">
                 Delivering Exceptional, Custom-Plastered Exteriors with
                 Precision, Durability, and a Commitment to Client Satisfaction
               </h2>
-              <div className="space-y-4 text-gray-600 text-justify">
+              <div className="md:space-y-4 space-y-2 text-gray-600 text-justify">
                 <p>
                   Our goal is to continue learning, improving and testing new
                   products so that we can provide a positive quality experience

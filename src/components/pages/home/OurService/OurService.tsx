@@ -27,11 +27,11 @@ const ServicesSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 portfolio">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 max-w-7xl">
+    <section className="md:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 portfolio">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16 lg:py-20 max-w-7xl">
         
         {/* Section Header */}
-        <div className="mb-8 sm:mb-12">
+        <div className="mb-6 md:mb-12">
         <div className="flex items-center gap-2 mb-2">
             <div className="w-6 h-[1px] bg-emerald-600"></div>
             <p className="text-[#231F20] md:text-xl text-base font-semibold">Our services</p>
@@ -39,7 +39,7 @@ const ServicesSection: React.FC = () => {
         </div>
 
         {/* Title and Description */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col md:gap-6">
           <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold font-playfair text-gray-900 max-w-2xl leading-snug sm:leading-tight">
             Protecting Your Home, One Service at a Time
           </h2>

@@ -17,29 +17,18 @@ export default function CustomPortfolioSlider() {
     { title: "Specialty Finishes", image: "/placeholder.svg" },
   ];
 
-  // Calculate maxIndex based on the number of items and visible slides
-  // Ensure we don't have a negative maxIndex if items <= visibleSlides
   const maxIndex = Math.max(0, Math.ceil(portfolioItems.length / visibleSlides) - 1);
 
 
-  // const handleNext = () => {
-  //   setActiveIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
-  // };
-
-  // const handlePrev = () => {
-  //   setActiveIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
-  // };
-
-   // Calculate the transform percentage dynamically based on visibleSlides
    const slideTransformPercentage = 100 / (portfolioItems.length / visibleSlides);
 
 
   return (
     <div className="portfolio">
-      <div className="max-w-7xl mx-auto px-4 py-16 poppins-font">
-        {/* Header */}
-        <div className="mb-8">
-          <div className="flex items-center gap-2 mb-2">
+      <div className="max-w-7xl mx-auto px-4 md:py-16 py-6 poppins-font">
+      
+        <div className="md:mb-8 mb-4">
+          <div className="flex items-center gap-2 ">
             <div className="w-6 h-[1px] bg-emerald-600"></div>
             <p className="text-[#231F20] md:text-xl text-base font-semibold">Our Portfolio</p>
           </div>
@@ -63,8 +52,7 @@ export default function CustomPortfolioSlider() {
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{
-                // Adjust width to account for padding/gap if necessary, or simplify
-                // Width should be enough to contain all items side-by-side
+                
                 width: `${portfolioItems.length * (20 / visibleSlides)}%`,
                 transform: `translateX(-${activeIndex * slideTransformPercentage}%)`,
             }}
@@ -72,8 +60,8 @@ export default function CustomPortfolioSlider() {
             {portfolioItems.map((item, index) => (
               <div
                 key={index}
-                 // Adjust width to be a fraction of the container based on visibleSlides
-                 // Use flex-shrink-0 to prevent items from shrinking
+                 
+                
                 className={`w-full sm:w-1/${visibleSlides} lg:w-1/${visibleSlides} px-3 shrink-0`}
               >
                 {/* Card Container - Added relative positioning here */}
@@ -81,10 +69,10 @@ export default function CustomPortfolioSlider() {
                   <Image
                     src={item.image}
                     alt={item.title}
-                    // You might adjust width/height based on desired aspect ratio
-                    width={250} // Example width, adjust as needed
-                    height={500} // Example height, adjust as needed
-                    className="w-full h-[500px] object-cover" // Ensure image covers the area
+                   
+                    width={250} 
+                    height={500}
+                    className="w-full h-[500px] object-cover"
                   />
                   {/* Text Overlay - Positioned absolutely at the bottom */}
                   <div className="absolute bottom-3 left-0 right-0 p-4 m-2 text-white text-center backdrop-blur-sm bg-black/30 rounded-lg"> {/* Added backdrop-blur and adjusted background color/opacity */}
@@ -97,18 +85,9 @@ export default function CustomPortfolioSlider() {
 
 
 {/*         
-          <button
-            onClick={handlePrev}
-            className="absolute left-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100 z-10"
-            aria-label="Previous slide"
-          >
+         
             &#9664; 
-          </button>
-          <button
-            onClick={handleNext}
-            className="absolute right-2 top-1/2 -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-gray-100 z-10"
-            aria-label="Next slide"
-          >
+          
             &#9654; 
           </button> */}
 

@@ -7,8 +7,8 @@ const realTestimonials = [
   {
     rating: 5,
     quote: "Professional, courteous, and attentive",
-    text: "We were extremely pleased with the plastering work Jimenez Plastering did for us! They got our job ready and on the schedule quickly. Our project manager kept us informed throughout the entire process.",
-    author: "David London NW3",
+    text: "We were extremely pleased with the plastering work Jimenez Plastering did for us! They got our job ready and on the schedule quickly. Our project manager ",
+    author: "David London",
     date: "September 12, 2022",
     avatar: "/assets/a1.png",
   },
@@ -73,7 +73,7 @@ const realTestimonials = [
 export default function TestimonialSection() {
   return (
     <div className="bg-[#E6F4EC4D] ">
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 bg-opacity-30">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16 lg:py-20 bg-opacity-30">
         <div className="mb-10 sm:mb-14">
           <div className="flex items-center mb-4 sm:mb-6">
             <div className="flex items-center gap-3">
@@ -86,17 +86,17 @@ export default function TestimonialSection() {
 
           <div className="flex flex-col md:flex-row justify-between items-start gap-6">
             <div>
-              <h2 className="text-4xl sm:text-3xl md:text-4xl font-bold font-playfair text-gray-900 max-w-2xl leading-tight sm:leading-snug md:leading-[120%]">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-playfair text-gray-900 max-w-2xl leading-tight sm:leading-snug md:leading-[120%]">
                 We&apos;re the Plastering Experts in Northern Arizona You Can
                 Trust
               </h2>
-              <p className="text-[#496187] mt-4 sm:mt-5 max-w-3xl text-xl sm:text-base font-poppins text-justify">
+              <p className="text-[#496187] mt-4 sm:mt-5 max-w-3xl text-xl md:text-base font-poppins text-justify">
                 Jimenez Plastering, with over 30 years of experience, delivers
                 reliable, high-quality plastering services for residential and
                 commercial projects across Arizona.
               </p>
             </div>
-            <Button className="mt-4 md:mt-0 bg-emerald-600 text-white hover:bg-emerald-700">
+            <Button className="">
               <Link href={"/reviews"}>See All Reviews</Link>
             </Button>
           </div>

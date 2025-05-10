@@ -44,10 +44,10 @@ export default function BeforeAfterSection() {
   ]
 
   return (
-    <section className="w-full py-16 px-4 md:px-8 relative overflow-hidden portfolio">
+    <section className="w-full md:py-16 py-8 px-4 md:px-8 relative overflow-hidden portfolio">
       <div className=" container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="mb-8 sm:mb-12">
+        <div className="md:mb-8 mb-4 sm:mb-12">
         <div className="flex items-center gap-2 mb-2">
             <div className="w-6 h-[1px] bg-emerald-600"></div>
             <p className="text-[#231F20] md:text-xl text-base font-semibold">Before & After</p>
@@ -55,12 +55,12 @@ export default function BeforeAfterSection() {
         </div>
 
         {/* Main Heading */}
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-stone-900 mb-4 max-w-2xl">
+        <h2 className="text-2xl md:text-4xl font-serif font-bold text-stone-900 mb-4 max-w-2xl">
           Current Lath & Plaster Condition: What Needs Attention
         </h2>
 
         {/* Description */}
-        <p className="text-stone-700 mb-10 max-w-2xl text-justify">
+        <p className="text-stone-700 md:mb-10 mb-6 max-w-2xl text-justify">
           From repairs to full installations, Jammer Plastering Inc. provides expert lath and plaster services that
           enhance durability and aesthetics, ensuring long-lasting beauty for your home or business.
         </p>

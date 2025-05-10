@@ -15,24 +15,24 @@ export default function AboutUsSection() {
               alt="Modern stucco home with blue sky"
               width={800}
               height={600}
-              className="h-full w-full object-cover rounded-md"
+              className="h-[350px] md:h-full w-full object-cover rounded-md"
             />
 
             {/* Overlay Card - Responsive positioning only */}
             <div
-              className="absolute bottom-4 sm:bottom-8 md:bottom-12 lg:bottom-16 xl:bottom-20 -right-2 sm:right-4 md:right-6 lg:-right-8 xl:-right-10 bg-white bg-opacity-100 p-4 sm:p-5 md:p-6 rounded-lg shadow-lg text-center z-10 w-[140px] sm:w-[160px] md:w-[180px] lg:w-[200px]"
+              className="absolute bottom-2 right-2 sm:bottom-4 sm:right-4 md:bottom-8 md:right-6 lg:bottom-12 lg:-right-8 xl:bottom-16 xl:-right-10 bg-white bg-opacity-100 p-3 sm:p-4 md:p-5 rounded-lg shadow-lg text-center z-10 w-[110px] sm:w-[140px] md:w-[180px]  lg:w-[200px]"
               style={{
-                backgroundImage: "url('/images/minicard.jpg')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                opacity: "100%",
+              backgroundImage: "url('/images/minicard.jpg')",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              opacity: "100%",
               }}
             >
-              <p className="text-xs sm:text-sm text-[#496187] font-bold font-playfair">
-                Established in
+              <p className="text-[10px] sm:text-xs text-[#496187] font-bold font-playfair">
+              Established in
               </p>
-              <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black font-poppins">
-                1998
+              <p className="text-xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-black font-poppins">
+              1998
               </p>
             </div>
           </div>
