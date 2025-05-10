@@ -22,3 +22,19 @@ export async function POST(request: Request) {
     });
   }
 }
+
+// GET - fetch all admins
+// export async function GET() {
+//   try {
+//     const db = await connectDB();
+//     const adminCollection = db.collection("admin");
+//     const admins = await adminCollection.find().toArray();
+
+//     return Response.json({ status: 200, data: admins });
+//   } catch (error) {
+//     return Response.json({
+//       status: 500,
+//       message: "Something went wrong",
+//     });
+//   }
+// }
