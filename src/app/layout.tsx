@@ -5,9 +5,10 @@ import { NextUiProvider } from "@/lib/providers/NextUIProvider";
 
 import ScrollToTopButton from "@/components/ui/ScrollToTopButton/ScrollToTopButton";
 import Footer from "@/components/shared/Footer/Footer";
-import ReduxStoreProvider from "@/redux/ReduxStoreProvider";
+
 import { Toaster } from "sonner";
 import Navbar from "@/components/shared/Navbar/Navbar";
+import ReduxProviders from "@/lib/ReduxProviders";
 
 const inter = Inter({
   weight: ["300", "400", "500", "600", "700"],
@@ -35,16 +36,16 @@ export default function RootLayout({
         className={`${inter.variable} antialiased`}
       >
         <NextUiProvider>
-          <ReduxStoreProvider>
+          <ReduxProviders>
             <>
-            <Toaster />
+              <Toaster />
               <Navbar />
               {children}
 
               <Footer />
               <ScrollToTopButton />
             </>
-          </ReduxStoreProvider>
+          </ReduxProviders>
         </NextUiProvider>
       </body>
     </html>
