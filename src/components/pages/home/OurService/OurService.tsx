@@ -41,7 +41,7 @@ const ServicesSection: React.FC = () => {
         {/* Title and Description */}
         <div className="flex flex-col md:gap-6">
           <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold font-playfair text-gray-900 max-w-2xl leading-snug sm:leading-tight">
-            Protecting Your Home, One Service at a Time
+          Generations of plasterers with over 40 years of combined experience.
           </h2>
 
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
