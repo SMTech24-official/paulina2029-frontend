@@ -1,23 +1,39 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import { configureStore, combineReducers } from "@reduxjs/toolkit";
+import storage from "redux-persist/lib/storage";
+import {
+  persistReducer,
+  persistStore,
+  FLUSH,
+  PAUSE,
+  PERSIST,
+  PURGE,
+  REGISTER,
+  REHYDRATE,
+} from "redux-persist";
 
-import { configureStore } from "@reduxjs/toolkit";
+import userReducer from "./features/user/userSlice";
 import { baseApi } from "./api/baseApi";
 
-export const makeStore = () => {
-  return configureStore({
-    reducer: {
-      [baseApi.reducerPath]: baseApi.reducer,
-    },
-    middleware: (getDefaultMiddlewares) =>
-      getDefaultMiddlewares().concat(baseApi.middleware),
-  });
+const persistConfig = {
+  key: "root",
+  storage,
 };
 
-export const store = makeStore();
+const rootReducer = combineReducers({
+  user: userReducer,
+  [baseApi.reducerPath]: baseApi.reducer,
+});
 
-// Infer the type of makeStore
-export type AppStore = ReturnType<typeof makeStore>;
-// Infer the `RootState` and `AppDispatch` types from the store itself
-export type RootState = ReturnType<AppStore["getState"]>;
-export type AppDispatch = AppStore["dispatch"];
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
+export const store = configureStore({
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
+    }).concat(baseApi.middleware),
+});
+
+export const persistor = persistStore(store);

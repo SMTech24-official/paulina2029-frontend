@@ -1,13 +1,14 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const baseQuery = fetchBaseQuery({
-  baseUrl: `https://gutterwizard.vercel.app/api`,
-  credentials: "include",
-});
-
+// Define a service using a base URL and expected endpoints
 export const baseApi = createApi({
-  reducerPath: "baseApi",
-  baseQuery: baseQuery,
-  tagTypes: ["newsLetter", "comment", "quote", "Blog", "serviceArea"],
+  reducerPath: "api",
+  baseQuery: fetchBaseQuery({
+    baseUrl: process.env.NEXT_PUBLIC_URL,
+    credentials: "include",
+  }),
+
   endpoints: () => ({}),
+  tagTypes: ["feedbacks", "subscriber", "Auth"],
 });
