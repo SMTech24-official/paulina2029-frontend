@@ -1,15 +1,33 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { connectDB } from "@/lib/connectDB";
 import { ObjectId } from "mongodb";
+import { z } from "zod";
+
+const db = await connectDB();
+
+const FeedbackSchema = z.object({
+  name: z.string().min(1, "Name is required"),
+  status: z.enum(["published", "unpublished"], {
+    required_error: "Status is required",
+    invalid_type_error: "Status must be either 'published' or 'unpublished'",
+  }),
+  title: z.string().min(1, "Title is required"),
+  email: z.string().email("Invalid email"),
+  message: z.string().min(1, "Message is required"),
+  rating: z.number().min(1).max(5).optional(), // optional field
+});
 
 export const GET = async () => {
   try {
-    const db = await connectDB();
-    const feedBackCollections = await db.collection("feedbacks");
+    // const db = await connectDB();
+    const feedBackCollections = await db.collection("reviews");
     const res = await feedBackCollections.find().toArray();
     if (res) {
       const avg_rating = parseFloat(
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        (res.reduce((acc: any, data: any) => acc + data.rating, 0) / res.length).toFixed(2)
+        (
+          res.reduce((acc: any, data: any) => acc + data.rating, 0) / res.length
+        ).toFixed(2)
       );
       return Response.json({
         status: 200,
@@ -29,29 +47,57 @@ export const GET = async () => {
   }
 };
 
+
+// demo 
+// {
+//   "name": "John Doe 2",
+//     "title": "John Doe",
+//   "email": "john@example.com",
+//   "message": "Great service!",
+//   "rating": 5,
+//   "status": "unpublished"
+// }
+
+
 export async function POST(request: Request) {
-  const feedbacks = await request.json();
   try {
-    const db = await connectDB();
-    const feedBackCollections = await db.collection("feedbacks");
+    const body = await request.json();
+
+    // 2. Validate the input data
+    const feedbacks = FeedbackSchema.parse(body);
+
+    // 3. Connect to DB and insert data
+    // const db = await connectDB();
+    const feedBackCollections = db.collection("reviews");
     const res = await feedBackCollections.insertOne(feedbacks);
-    if (res) {
-      return Response.json({
-        status: 200,
-        data: res,
-      });
-    }
+
     return Response.json({
-      status: 404,
-      message: "No data Found",
+      status: 200,
+      data: res,
     });
   } catch (error) {
+    // 4. Handle validation or DB errors
+    if (error instanceof z.ZodError) {
+      return Response.json({
+        status: 400,
+        message: "Validation error",
+        errors: error.errors,
+      });
+    }
+
     return Response.json({
-      message: error,
+      status: 500,
+      message: "Internal Server Error",
+      error: error instanceof Error ? error.message : error,
     });
   }
 }
 
+
+// send in body
+// {
+//   "id": "682fb7ee71f0b0c2bdf8affe"
+// }
 export async function DELETE(request: Request) {
   try {
     const { id } = await request.json(); // Assuming the ID is provided in the JSON body
@@ -63,7 +109,7 @@ export async function DELETE(request: Request) {
       );
     }
 
-    const db = await connectDB();
+    // const db = await connectDB();
     const feedBackCollections = db.collection("feedbacks");
 
     // Delete document by ID
@@ -90,6 +136,12 @@ export async function DELETE(request: Request) {
   }
 }
 
+
+// send in body
+// {
+//   "id": "682fb7ee71f0b0c2bdf8affe"
+// }
+
 export async function PATCH(request: Request) {
   try {
     const { id } = await request.json(); // Assume the ID is provided in the JSON body
@@ -105,8 +157,8 @@ export async function PATCH(request: Request) {
       );
     }
 
-    const db = await connectDB();
-    const feedBackCollections = db.collection("feedbacks");
+    // const db = await connectDB();
+    const feedBackCollections = db.collection("reviews");
 
     // Find the document by ID
     const feedback = await feedBackCollections.findOne({

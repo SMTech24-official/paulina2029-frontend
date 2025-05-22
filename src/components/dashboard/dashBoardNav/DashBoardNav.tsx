@@ -63,7 +63,7 @@ export default function DashboardNav() {
 
             <div
                 className={cn(
-                    "fixed inset-y-0 left-0 z-40 w-64 md:w-56 lg:w-72 h-full shadow-2xl md:shadow-lg dark:bg-gray-800 transform transition-transform duration-300 ease-in-out md:relative md:translate-x-0 bg-pink-50",
+                    "fixed inset-y-0 left-0 z-40 w-64 md:w-56 lg:w-72 h-full shadow-2xl md:shadow-lg dark:bg-gray-800 transform transition-transform duration-300 ease-in-out md:relative md:translate-x-0 bg-blue-50",
                     isOpen ? "translate-x-0" : "-translate-x-full"
                 )}
             >
@@ -72,7 +72,7 @@ export default function DashboardNav() {
                     <div className="flex items-center justify-center">
                         <Logo />
                     </div>
-                    <ScrollArea className="flex-1 border">
+                    <ScrollArea className="flex-1 ">
                         <nav className="space-y-2 pl-4 p-2">
                             {adminNavItems?.map((item) => (
                                 <Link
@@ -80,7 +80,7 @@ export default function DashboardNav() {
                                     href={item.href}
                                     className={cn(
                                         `flex group items-center space-x-3 px-3 py-2 rounded-lg ${poppins.className}`,
-                                        pathname === item.href ? "bg-button_bg text-white" : " group-hover:text-text_title"
+                                        pathname === item.href ? "bg-blue-700 text-white" : " group-hover:text-text_title"
                                     )}
                                     onClick={() => setActiveNav(item.href)}
                                 >
@@ -91,7 +91,7 @@ export default function DashboardNav() {
                         </nav>
                     </ScrollArea>
                     {/* User section */}
-                    <div className='p-4 border-t'>
+                    <div className='p-4 '>
                         <div className='flex items-center space-x-4 p-2'>
                             <div className=''>
                                 <img src="/placeholder-avatar.jpg" alt="User" />
