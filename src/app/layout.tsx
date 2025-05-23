@@ -1,14 +1,11 @@
+import { NextUiProvider } from "@/lib/providers/NextUIProvider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { NextUiProvider } from "@/lib/providers/NextUIProvider";
 
-import ScrollToTopButton from "@/components/ui/ScrollToTopButton/ScrollToTopButton";
-import Footer from "@/components/shared/Footer/Footer";
 
-import { Toaster } from "sonner";
-import Navbar from "@/components/shared/Navbar/Navbar";
 import ReduxProvider from "@/redux/Provider";
+import { Toaster } from "sonner";
 
 const inter = Inter({
   weight: ["300", "400", "500", "600", "700"],
@@ -37,14 +34,8 @@ export default function RootLayout({
       >
         <NextUiProvider>
           <ReduxProvider>
-            <>
-              <Toaster />
-              <Navbar />
-              {children}
-
-              <Footer />
-              <ScrollToTopButton />
-            </>
+            {children}
+            <Toaster />
           </ReduxProvider>
         </NextUiProvider>
       </body>

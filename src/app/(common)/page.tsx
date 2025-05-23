@@ -1,4 +1,3 @@
-import HappenBanner from "@/components/cards/HappenBanner/cards/HappendBaner";
 import ContactPage from "@/components/ContactUs/ContactUs";
 import Banner from "@/components/pages/home/banner/Banner";
 import PortfolioSwiper from "@/components/pages/home/Our-Portfolio/Portfolio";
@@ -20,7 +19,7 @@ const Home = () => {
       <Banner />
       <TrustedByHundreds />
       <OurService />
-      <HappenBanner />
+      {/* <HappenBanner /> */}
       <TestimonialSection />
       <PortfolioSwiper />
       <ContactPage />
