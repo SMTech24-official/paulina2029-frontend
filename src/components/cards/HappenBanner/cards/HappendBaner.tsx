@@ -11,18 +11,18 @@ const HappenBanner = () => {
       <div className="max-w-7xl mx-auto text-center bg-gradient-to-r">
         {/* Main Heading */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-[500] font-playfair mb-4 tracking-tight">
-          MAKE IT HAPPEN
+          MAKE IT LAST
         </h1>
 
         {/* Subheading */}
         <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold font-playfair mb-8">
-          YOUR DREAM <span className="text-[#FFD700]">HOME</span>
+     WITH DURABLE <span className="text-[#FFD700]">STUCCO</span>
         </h2>
 
         {/* Trusted Brands */}
         <div className="mt-12">
           <p className="text-lg sm:text-md md:text-xl text-white font-[500] font-poppins">
-            Trusted by over 300+ of the world's leading brands
+            Trusted by over 300+ of the world&lsquo;s leading brands
           </p>
         </div>
       </div>
