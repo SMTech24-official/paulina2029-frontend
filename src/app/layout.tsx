@@ -34,10 +34,8 @@ export default function RootLayout({
       >
         <NextUiProvider>
           <ReduxProvider>
-            <>
-              <Toaster />
-              {children}
-            </>
+            {children}
+            <Toaster />
           </ReduxProvider>
         </NextUiProvider>
       </body>

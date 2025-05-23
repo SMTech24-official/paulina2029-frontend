@@ -4,7 +4,7 @@ import React from 'react';
 import CardImg1 from "@/assets/service-card/card1.png";
 import CardImg2 from "@/assets/service-card/card2.png";
 import CardImg3 from "@/assets/service-card/card3.png";
-import CardImg4 from "@/assets/service-card/card4.png";
+import CardImg4 from "@/assets/cards/cover5.jpg";
 
 const ServicesSection: React.FC = () => {
   const services = [
@@ -21,8 +21,8 @@ const ServicesSection: React.FC = () => {
       description: "Veneer a thin layer of any stone used as decorative facing material that is not meant to be load bearing. Stone cladding is a stone veneer, or simulated stone, applied to a building or other structure made of a material other than stone."
     },
     {
-      title: "Siding",
-      description: "Siding or wall cladding is the protective material attached to the exterior side of a wall of a house or other building."
+      title: "Nichita Fiber Cement Panels",
+      description: "Nichita Fiber Cement Panels are premium-quality, durable building materials designed for both exterior and interior applications."
     }
   ];
 
@@ -41,7 +41,7 @@ const ServicesSection: React.FC = () => {
         {/* Title and Description */}
         <div className="flex flex-col md:gap-6">
           <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl font-bold font-playfair text-gray-900 max-w-2xl leading-snug sm:leading-tight">
-            Protecting Your Home, One Service at a Time
+          Generations of plasterers with over 40 years of combined experience.
           </h2>
 
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
